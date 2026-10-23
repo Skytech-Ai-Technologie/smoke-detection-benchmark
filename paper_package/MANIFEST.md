@@ -6,7 +6,7 @@ each asset to its source path and role.
 
 ## 1. figures/ — final paper figures
 
-- `delay.png` — Operating-point figure: time-to-first-alarm distribution per model (left) vs false-alarms/hour (right); censored misses at video duration; dots coloured by split.
+- `delay.png` — Three-panel delay figure: (a) time-to-detection CDF per model (recall within t, log axis, endpoint markers), (b) per-video strips (box + split-coloured dots; misses as x censored at each video's duration), (c) false-alarms/hour with split-std error bars; rows sorted by median delay, TCN highlighted.
 - `dfire_transfer_roc.png` — Frame-level transfer probe of the spatial CNN to DFire still images (test-only): negative/odd transfer documented honestly — scores collapse to a 0.6–0.73 band on every class (smoke vs none AUROC 0.42 max / 0.46 mean; vs fire distractors 0.69 / 0.58).
 - `pr.png` — Frame-level precision-recall pooled (TCN AP 0.693 vs GRU 0.634; 0.58 chance line).
 - `pr_per_split.png` — PR small multiples per split (AP annotated; split02 0.99 down to split04 0.56 — honest spread).
