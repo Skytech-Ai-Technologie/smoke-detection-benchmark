@@ -1,0 +1,8 @@
+2026-10-21 20:49:30 | INFO    | evaluation.common            | applied the operating point from results/raw/thresholds_gru_split01_seed42.json: {'mode': 'fixed', 'confidence_threshold': 0.95, 'persistence_seconds': 0.0}
+2026-10-21 20:49:31 | INFO    | evaluation.evaluate_frame    | evaluating 7 videos (split01 / test)
+2026-10-21 20:49:31 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 20:49:31 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\gru_split01_seed42\model_calibrated.pt (sha256=e4e5cd6d82ce9f7e)
+2026-10-21 20:51:09 | INFO    | evaluation.common            | wrote results\raw\frame_eval_gru_split01_seed42.json
+2026-10-21 20:51:09 | INFO    | evaluation.evaluate_frame    | wrote results\raw\frame_eval_gru_split01_seed42_per_video.csv
+2026-10-21 20:51:09 | INFO    | utils.experiment_registry    | appended experiment frame_eval_gru_split01_seed42 to experiments\registry.csv
+2026-10-21 20:51:09 | INFO    | evaluation.evaluate_frame    | frame metrics | precision=0.6636 recall=0.7678 f1=0.7119 auroc=0.5955 auprc=0.6341 ece=0.3181

@@ -1,0 +1,76 @@
+{
+  "model": "results/raw/tcn_split01_seed42/model_calibrated.pt",
+  "spatial_checkpoint": "results/raw/spatial_split01_seed42/model.pt",
+  "device": "cpu",
+  "single_stream": {
+    "video": "data/raw/firesense_smoke/neg/testneg02.808.avi",
+    "n_frames": 1000,
+    "fps_nominal": 25.0,
+    "system_fps": 165.1314805746632,
+    "wall_time_s": 6.055780499998946,
+    "frame_budget_ms": 40.0,
+    "dropped_frames": 0,
+    "dropped_frame_ratio": 0.0,
+    "peak_ram_mb": 816.03125,
+    "peak_vram_mb": 0.0,
+    "stage_ms_per_frame": {
+      "decoding": 0.0,
+      "kalman": 3.516153999924427,
+      "hsv_candidates": 0.8991106000758009,
+      "spatial_cnn": 0.0207278000889346,
+      "features": 0.6401586000283714,
+      "temporal": 0.961026600227342,
+      "alarm_policy": 0.005751399556174874,
+      "logging": 0.0
+    },
+    "stage_share": {
+      "decoding": 0.0,
+      "kalman": 0.5818625371871822,
+      "hsv_candidates": 0.1487872189281925,
+      "spatial_cnn": 0.003430091614393286,
+      "features": 0.10593515165226228,
+      "temporal": 0.1590332436874698,
+      "alarm_policy": 0.0009517569304999363,
+      "logging": 0.0
+    },
+    "mean_ms": 6.055223099916475,
+    "std_ms": 0.5759444043233445,
+    "p50_ms": 6.060849998902995,
+    "p90_ms": 6.402539998816792,
+    "p95_ms": 6.538415004615672,
+    "p99_ms": 7.42848999943817,
+    "max_ms": 13.550299991038628,
+    "min_ms": 3.1737999961478636,
+    "jitter_ms": 0.2470553920311504
+  },
+  "concurrency": [
+    {
+      "streams": 2,
+      "aggregate_fps": 188.47215705513506,
+      "per_stream_fps": [
+        101.03646234163789,
+        101.0143395309388
+      ],
+      "p95_ms_per_stream": [
+        10.778009991918225,
+        10.844289990927791
+      ]
+    },
+    {
+      "streams": 4,
+      "aggregate_fps": 227.92591892524135,
+      "per_stream_fps": [
+        62.296659032692396,
+        60.89874588406667,
+        60.833471607790145,
+        60.84750127854181
+      ],
+      "p95_ms_per_stream": [
+        17.177920004178304,
+        17.585264992521843,
+        17.62160501020844,
+        17.623014996934216
+      ]
+    }
+  ]
+}

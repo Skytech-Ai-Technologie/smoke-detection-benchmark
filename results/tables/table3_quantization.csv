@@ -1,0 +1,3 @@
+model,mode,source_checkpoint,max_abs_logit_diff,mean_abs_logit_diff,size_bytes
+quantized_fp16_seed42/quantization_report,fp16,results/raw/tcn_split01_seed42/model_calibrated.pt,0.00152,0.000905,"{""fp16_bytes"": 18398, ""fp32_bytes"": 23920}"
+quantized_int8_seed42/quantization_report,int8,results/raw/tcn_split01_seed42/model_calibrated.pt,0.06709,0.021565,"{""int8_bytes"": 26416, ""fp32_bytes"": 23920}"

@@ -1,0 +1,17 @@
+{
+  "checkpoint": "results\\raw\\spatial_split01_seed42_firesense__28b565f0\\model.pt",
+  "checkpoint_sha256": "6a43cc9d1cf40723b20dfbc7d9936fa17474b6dde9861851bbe84bd3c399538a",
+  "command": "D:\\papier 3 2027\\src\\training\\train_spatial.py --config configs/baseline_kalman_hsv_cnn.yaml --dataset firesense --split split01 --seed 42 --device cuda",
+  "config_sha256": "ba7ba66056a3c680efc8b59bcb607932c50337cfb5f75308bdb4c08b40b9da7b",
+  "dataset_manifest_sha256": "657534700427de2b23eb62bbb18f4d54af99698e3c0aebbb0250f2a150e29f6f",
+  "device": "cuda",
+  "experiment_id": "spatial_split01_seed42_firesense",
+  "git_commit": "unknown",
+  "metrics_json": "{\"best_epoch\": 1, \"best_val_auc\": -1.6190318208749555, \"n_train_crops\": 11421, \"n_val_crops\": 1185}",
+  "model": "spatial_cnn/firesense",
+  "notes": "stage=B",
+  "precision": "fp32",
+  "seed": 42,
+  "split": "split01",
+  "timestamp_utc": "2026-10-21T13:59:18+00:00"
+}

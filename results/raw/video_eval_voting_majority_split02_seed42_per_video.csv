@@ -1,0 +1,8 @@
+video_id,label,fps,duration_sec,onset_time,n_alarm_events,n_false_alarm_events,detected,detection_delay,first_alarm_time,alarm_duration_total,alarm_reset_count,n_alarm_frames,recall_at_0_5s,recall_at_1_0s,recall_at_2_0s
+firesense_testneg01_807,negative,25.0,10.04,,1,1,False,,1.04,4.84,0,122,False,False,False
+firesense_testneg05_811,negative,25.0,10.04,,0,0,False,,,0,0,0,False,False,False
+firesense_testneg07_813,negative,25.0,31.04,,0,0,False,,,0,0,0,False,False,False
+firesense_testpos08_824,smoke,15.0,24.2,0.0,2,0,True,8.066666666666666,8.066666666666666,11.466666666666669,1,174,False,False,False
+firesense_testpos09_825,smoke,30.0,27.6,0.0,1,0,True,0.36666666666666664,0.36666666666666664,27.2,0,817,True,True,True
+firesense_testpos10_826,smoke,29.97,49.015682349015684,0.0,1,0,True,0.3670337003670337,0.3670337003670337,48.615281948615284,0,1458,True,True,True
+firesense_testpos11_827,smoke,25.0,27.08,0.0,1,0,True,1.64,1.64,25.4,0,636,False,False,True

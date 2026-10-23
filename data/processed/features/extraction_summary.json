@@ -1,0 +1,180 @@
+{
+  "videos": [
+    {
+      "video_id": "firesense_testneg01_807",
+      "onset_frame": null,
+      "onset_source": "manual",
+      "n_frames": 251,
+      "n_positive_frames": 0,
+      "n_candidates": 23
+    },
+    {
+      "video_id": "firesense_testneg02_808",
+      "onset_frame": null,
+      "onset_source": "manual",
+      "n_frames": 1128,
+      "n_positive_frames": 0,
+      "n_candidates": 15
+    },
+    {
+      "video_id": "firesense_testneg03_809",
+      "onset_frame": null,
+      "onset_source": "manual",
+      "n_frames": 182,
+      "n_positive_frames": 0,
+      "n_candidates": 120
+    },
+    {
+      "video_id": "firesense_testneg04_810",
+      "onset_frame": null,
+      "onset_source": "manual",
+      "n_frames": 2840,
+      "n_positive_frames": 0,
+      "n_candidates": 148
+    },
+    {
+      "video_id": "firesense_testneg05_811",
+      "onset_frame": null,
+      "onset_source": "manual",
+      "n_frames": 251,
+      "n_positive_frames": 0,
+      "n_candidates": 0
+    },
+    {
+      "video_id": "firesense_testneg06_812",
+      "onset_frame": null,
+      "onset_source": "manual",
+      "n_frames": 251,
+      "n_positive_frames": 0,
+      "n_candidates": 714
+    },
+    {
+      "video_id": "firesense_testneg07_813",
+      "onset_frame": null,
+      "onset_source": "manual",
+      "n_frames": 776,
+      "n_positive_frames": 0,
+      "n_candidates": 56
+    },
+    {
+      "video_id": "firesense_testneg08_814",
+      "onset_frame": null,
+      "onset_source": "manual",
+      "n_frames": 751,
+      "n_positive_frames": 0,
+      "n_candidates": 21
+    },
+    {
+      "video_id": "firesense_testneg09_815",
+      "onset_frame": null,
+      "onset_source": "manual",
+      "n_frames": 723,
+      "n_positive_frames": 0,
+      "n_candidates": 1575
+    },
+    {
+      "video_id": "firesense_testpos01_817",
+      "onset_frame": 15,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 407,
+      "n_positive_frames": 392,
+      "n_candidates": 832
+    },
+    {
+      "video_id": "firesense_testpos02_818",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 1728,
+      "n_positive_frames": 1728,
+      "n_candidates": 605
+    },
+    {
+      "video_id": "firesense_testpos03_819",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 322,
+      "n_positive_frames": 322,
+      "n_candidates": 150
+    },
+    {
+      "video_id": "firesense_testpos04_820",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 1964,
+      "n_positive_frames": 1964,
+      "n_candidates": 5128
+    },
+    {
+      "video_id": "firesense_testpos05_821",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 514,
+      "n_positive_frames": 514,
+      "n_candidates": 2
+    },
+    {
+      "video_id": "firesense_testpos06_822",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 201,
+      "n_positive_frames": 201,
+      "n_candidates": 80
+    },
+    {
+      "video_id": "firesense_testpos07_823",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 701,
+      "n_positive_frames": 701,
+      "n_candidates": 31
+    },
+    {
+      "video_id": "firesense_testpos08_824",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 363,
+      "n_positive_frames": 363,
+      "n_candidates": 64
+    },
+    {
+      "video_id": "firesense_testpos09_825",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 828,
+      "n_positive_frames": 828,
+      "n_candidates": 1828
+    },
+    {
+      "video_id": "firesense_testpos10_826",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 1469,
+      "n_positive_frames": 1469,
+      "n_candidates": 3786
+    },
+    {
+      "video_id": "firesense_testpos11_827",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 677,
+      "n_positive_frames": 677,
+      "n_candidates": 881
+    },
+    {
+      "video_id": "firesense_testpos12_828",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 362,
+      "n_positive_frames": 362,
+      "n_candidates": 686
+    },
+    {
+      "video_id": "firesense_testpos13_829",
+      "onset_frame": 0,
+      "onset_source": "manual_contact_sheet",
+      "n_frames": 463,
+      "n_positive_frames": 463,
+      "n_candidates": 580
+    }
+  ]
+}

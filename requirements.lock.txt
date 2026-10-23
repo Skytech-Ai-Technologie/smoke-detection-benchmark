@@ -1,0 +1,19 @@
+# Exact environment used for the reported runs.
+# Regenerate with:  python -m src.utils.lockfile  (or: pip freeze > requirements.lock.txt)
+# Platform: win32 (Windows-10-10.0.26200-SP0), Python 3.11.9
+# NOTE: torch is installed from the CUDA 12.x/13.x wheel index. Adjust the index-url
+# line to match the machine that reproduces the run.
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+numpy==2.4.6
+opencv-python==4.14.0.90
+torch==2.14.1
+PyYAML==6.0.3
+pandas==3.0.6
+scikit-learn==1.9.1
+scipy==1.17.1
+matplotlib==3.11.2
+tqdm==4.70.1
+psutil==7.2.2
+pytest==9.1.1

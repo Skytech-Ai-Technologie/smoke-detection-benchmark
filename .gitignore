@@ -1,0 +1,30 @@
+# --- raw dataset: large, re-downloadable (see data/README.md) --------------
+data/raw/
+
+# --- annotation contact sheets: large PNGs, regenerable from raw videos ----
+data/annotations/sheets/
+data/annotations/sheets_fine/
+data/annotations/sheets_neg/
+
+# --- redundant archive (paper_package/ itself is committed) ----------------
+*.zip
+
+# --- caches / editors -------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- OS clutter -------------------------------------------------------------
+Thumbs.db
+Desktop.ini
+
+# Keep committed: data/processed/features/*.npz, results/raw/ incl. *.pt,
+# results/logs, results/probe, paper_package/, all CSV/JSON tables, figure/.

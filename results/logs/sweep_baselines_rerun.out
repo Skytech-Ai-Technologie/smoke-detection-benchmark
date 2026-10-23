@@ -1,0 +1,301 @@
+=== sweep_baselines split01 ===
+2026-10-21 20:52:02 | INFO    | evaluation.sweep_curve       | sweeping model spatial (variant=spatial)
+2026-10-21 20:52:02 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 20:52:05 | INFO    | models.builder               | variant spatial -> temporal kind none
+2026-10-21 20:53:01 | INFO    | evaluation.sweep_curve       | sweeping model voting_mean (variant=voting_mean)
+2026-10-21 20:53:01 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 20:53:01 | INFO    | models.builder               | variant voting_mean -> temporal kind voting
+2026-10-21 20:54:00 | INFO    | evaluation.sweep_curve       | sweeping model voting_median (variant=voting_median)
+2026-10-21 20:54:00 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 20:54:00 | INFO    | models.builder               | variant voting_median -> temporal kind voting
+2026-10-21 20:55:00 | INFO    | evaluation.sweep_curve       | sweeping model voting_majority (variant=voting_majority)
+2026-10-21 20:55:00 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 20:55:00 | INFO    | models.builder               | variant voting_majority -> temporal kind voting
+2026-10-21 20:55:58 | INFO    | evaluation.sweep_curve       | sweeping model voting_max (variant=voting_max)
+2026-10-21 20:55:58 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 20:55:58 | INFO    | models.builder               | variant voting_max -> temporal kind voting
+2026-10-21 20:56:56 | INFO    | evaluation.sweep_curve       | sweeping model voting_persistence (variant=voting_persistence)
+2026-10-21 20:56:56 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 20:56:56 | INFO    | models.builder               | variant voting_persistence -> temporal kind voting
+2026-10-21 20:57:52 | INFO    | evaluation.sweep_curve       | wrote results\raw\sweep_baselines_split01_seed42.json
+2026-10-21 20:57:53 | INFO    | utils.experiment_registry    | appended experiment sweep_baselines_split01_seed42 to experiments\registry.csv
+[
+  {
+    "recall_level": 0.25,
+    "spatial": 0.0,
+    "voting_mean": 0.0,
+    "voting_median": 0.0,
+    "voting_majority": 0.0,
+    "voting_max": 0.0,
+    "voting_persistence": 0.0
+  },
+  {
+    "recall_level": 0.5,
+    "spatial": 84.50704225352115,
+    "voting_mean": 42.25352112676057,
+    "voting_median": 42.25352112676057,
+    "voting_majority": 84.50704225352115,
+    "voting_max": 84.50704225352115,
+    "voting_persistence": 84.50704225352115
+  },
+  {
+    "recall_level": 0.75,
+    "spatial": 126.76056338028172,
+    "voting_mean": 84.50704225352113,
+    "voting_median": 84.50704225352113,
+    "voting_majority": 84.50704225352115,
+    "voting_max": 105.63380281690144,
+    "voting_persistence": 126.76056338028172
+  },
+  {
+    "recall_level": 1.0,
+    "spatial": 169.0140845070423,
+    "voting_mean": 126.76056338028171,
+    "voting_median": 126.76056338028171,
+    "voting_majority": 84.50704225352115,
+    "voting_max": 126.76056338028171,
+    "voting_persistence": 169.0140845070423
+  }
+]
+--- sweep_baselines split01 finished in 352.8 s (exit 0)
+=== sweep_baselines split02 ===
+2026-10-21 20:57:55 | INFO    | evaluation.sweep_curve       | sweeping model spatial (variant=spatial)
+2026-10-21 20:57:55 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split02_seed42\model.pt (sha256=ec27dfbe348ec131)
+2026-10-21 20:57:56 | INFO    | models.builder               | variant spatial -> temporal kind none
+2026-10-21 20:59:07 | INFO    | evaluation.sweep_curve       | sweeping model voting_mean (variant=voting_mean)
+2026-10-21 20:59:07 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split02_seed42\model.pt (sha256=ec27dfbe348ec131)
+2026-10-21 20:59:07 | INFO    | models.builder               | variant voting_mean -> temporal kind voting
+2026-10-21 21:00:17 | INFO    | evaluation.sweep_curve       | sweeping model voting_median (variant=voting_median)
+2026-10-21 21:00:17 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split02_seed42\model.pt (sha256=ec27dfbe348ec131)
+2026-10-21 21:00:17 | INFO    | models.builder               | variant voting_median -> temporal kind voting
+2026-10-21 21:01:28 | INFO    | evaluation.sweep_curve       | sweeping model voting_majority (variant=voting_majority)
+2026-10-21 21:01:28 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split02_seed42\model.pt (sha256=ec27dfbe348ec131)
+2026-10-21 21:01:28 | INFO    | models.builder               | variant voting_majority -> temporal kind voting
+2026-10-21 21:02:38 | INFO    | evaluation.sweep_curve       | sweeping model voting_max (variant=voting_max)
+2026-10-21 21:02:38 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split02_seed42\model.pt (sha256=ec27dfbe348ec131)
+2026-10-21 21:02:38 | INFO    | models.builder               | variant voting_max -> temporal kind voting
+2026-10-21 21:03:47 | INFO    | evaluation.sweep_curve       | sweeping model voting_persistence (variant=voting_persistence)
+2026-10-21 21:03:47 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split02_seed42\model.pt (sha256=ec27dfbe348ec131)
+2026-10-21 21:03:47 | INFO    | models.builder               | variant voting_persistence -> temporal kind voting
+2026-10-21 21:04:55 | INFO    | evaluation.sweep_curve       | wrote results\raw\sweep_baselines_split02_seed42.json
+2026-10-21 21:04:55 | INFO    | utils.experiment_registry    | appended experiment sweep_baselines_split02_seed42 to experiments\registry.csv
+[
+  {
+    "recall_level": 0.25,
+    "spatial": NaN,
+    "voting_mean": NaN,
+    "voting_median": NaN,
+    "voting_majority": NaN,
+    "voting_max": NaN,
+    "voting_persistence": NaN
+  },
+  {
+    "recall_level": 0.5,
+    "spatial": NaN,
+    "voting_mean": NaN,
+    "voting_median": NaN,
+    "voting_majority": NaN,
+    "voting_max": NaN,
+    "voting_persistence": NaN
+  },
+  {
+    "recall_level": 0.75,
+    "spatial": NaN,
+    "voting_mean": NaN,
+    "voting_median": NaN,
+    "voting_majority": NaN,
+    "voting_max": 0.0,
+    "voting_persistence": NaN
+  },
+  {
+    "recall_level": 1.0,
+    "spatial": 0.0,
+    "voting_mean": 0.0,
+    "voting_median": 0.0,
+    "voting_majority": 0.0,
+    "voting_max": 70.42253521126761,
+    "voting_persistence": 0.0
+  }
+]
+--- sweep_baselines split02 finished in 422.7 s (exit 0)
+=== sweep_baselines split03 ===
+2026-10-21 21:04:58 | INFO    | evaluation.sweep_curve       | sweeping model spatial (variant=spatial)
+2026-10-21 21:04:58 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split03_seed42\model.pt (sha256=bbd62ee455cf21fa)
+2026-10-21 21:04:58 | INFO    | models.builder               | variant spatial -> temporal kind none
+2026-10-21 21:05:45 | INFO    | evaluation.sweep_curve       | sweeping model voting_mean (variant=voting_mean)
+2026-10-21 21:05:45 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split03_seed42\model.pt (sha256=bbd62ee455cf21fa)
+2026-10-21 21:05:45 | INFO    | models.builder               | variant voting_mean -> temporal kind voting
+2026-10-21 21:06:31 | INFO    | evaluation.sweep_curve       | sweeping model voting_median (variant=voting_median)
+2026-10-21 21:06:31 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split03_seed42\model.pt (sha256=bbd62ee455cf21fa)
+2026-10-21 21:06:31 | INFO    | models.builder               | variant voting_median -> temporal kind voting
+2026-10-21 21:07:18 | INFO    | evaluation.sweep_curve       | sweeping model voting_majority (variant=voting_majority)
+2026-10-21 21:07:18 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split03_seed42\model.pt (sha256=bbd62ee455cf21fa)
+2026-10-21 21:07:18 | INFO    | models.builder               | variant voting_majority -> temporal kind voting
+2026-10-21 21:08:05 | INFO    | evaluation.sweep_curve       | sweeping model voting_max (variant=voting_max)
+2026-10-21 21:08:05 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split03_seed42\model.pt (sha256=bbd62ee455cf21fa)
+2026-10-21 21:08:05 | INFO    | models.builder               | variant voting_max -> temporal kind voting
+2026-10-21 21:08:54 | INFO    | evaluation.sweep_curve       | sweeping model voting_persistence (variant=voting_persistence)
+2026-10-21 21:08:54 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split03_seed42\model.pt (sha256=bbd62ee455cf21fa)
+2026-10-21 21:08:54 | INFO    | models.builder               | variant voting_persistence -> temporal kind voting
+2026-10-21 21:09:42 | INFO    | evaluation.sweep_curve       | wrote results\raw\sweep_baselines_split03_seed42.json
+2026-10-21 21:09:42 | INFO    | utils.experiment_registry    | appended experiment sweep_baselines_split03_seed42 to experiments\registry.csv
+[
+  {
+    "recall_level": 0.25,
+    "spatial": 73.46938775510205,
+    "voting_mean": 73.46938775510205,
+    "voting_median": 73.46938775510205,
+    "voting_majority": NaN,
+    "voting_max": NaN,
+    "voting_persistence": 73.46938775510205
+  },
+  {
+    "recall_level": 0.5,
+    "spatial": 110.20408163265307,
+    "voting_mean": 146.9387755102041,
+    "voting_median": 146.9387755102041,
+    "voting_majority": 146.9387755102041,
+    "voting_max": NaN,
+    "voting_persistence": 110.20408163265307
+  },
+  {
+    "recall_level": 0.75,
+    "spatial": 146.9387755102041,
+    "voting_mean": 183.67346938775512,
+    "voting_median": 183.67346938775512,
+    "voting_majority": 146.9387755102041,
+    "voting_max": 146.9387755102041,
+    "voting_persistence": 146.9387755102041
+  },
+  {
+    "recall_level": 1.0,
+    "spatial": 220.40816326530614,
+    "voting_mean": 220.40816326530614,
+    "voting_median": 220.40816326530614,
+    "voting_majority": 146.9387755102041,
+    "voting_max": 220.40816326530614,
+    "voting_persistence": 220.40816326530614
+  }
+]
+--- sweep_baselines split03 finished in 287.0 s (exit 0)
+=== sweep_baselines split04 ===
+2026-10-21 21:09:45 | INFO    | evaluation.sweep_curve       | sweeping model spatial (variant=spatial)
+2026-10-21 21:09:45 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 21:09:45 | INFO    | models.builder               | variant spatial -> temporal kind none
+2026-10-21 21:15:00 | INFO    | evaluation.sweep_curve       | sweeping model voting_mean (variant=voting_mean)
+2026-10-21 21:15:00 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 21:15:00 | INFO    | models.builder               | variant voting_mean -> temporal kind voting
+2026-10-21 21:20:06 | INFO    | evaluation.sweep_curve       | sweeping model voting_median (variant=voting_median)
+2026-10-21 21:20:06 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 21:20:06 | INFO    | models.builder               | variant voting_median -> temporal kind voting
+2026-10-21 21:25:12 | INFO    | evaluation.sweep_curve       | sweeping model voting_majority (variant=voting_majority)
+2026-10-21 21:25:12 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 21:25:12 | INFO    | models.builder               | variant voting_majority -> temporal kind voting
+2026-10-21 21:30:29 | INFO    | evaluation.sweep_curve       | sweeping model voting_max (variant=voting_max)
+2026-10-21 21:30:29 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 21:30:29 | INFO    | models.builder               | variant voting_max -> temporal kind voting
+2026-10-21 21:35:43 | INFO    | evaluation.sweep_curve       | sweeping model voting_persistence (variant=voting_persistence)
+2026-10-21 21:35:43 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 21:35:43 | INFO    | models.builder               | variant voting_persistence -> temporal kind voting
+2026-10-21 21:40:54 | INFO    | evaluation.sweep_curve       | wrote results\raw\sweep_baselines_split04_seed42.json
+2026-10-21 21:40:54 | INFO    | utils.experiment_registry    | appended experiment sweep_baselines_split04_seed42 to experiments\registry.csv
+[
+  {
+    "recall_level": 0.25,
+    "spatial": NaN,
+    "voting_mean": NaN,
+    "voting_median": NaN,
+    "voting_majority": NaN,
+    "voting_max": NaN,
+    "voting_persistence": NaN
+  },
+  {
+    "recall_level": 0.5,
+    "spatial": 0.0,
+    "voting_mean": 0.0,
+    "voting_median": 0.0,
+    "voting_majority": 0.0,
+    "voting_max": 0.0,
+    "voting_persistence": 0.0
+  },
+  {
+    "recall_level": 0.75,
+    "spatial": 187.4023945861531,
+    "voting_mean": 23.425299323269137,
+    "voting_median": 23.425299323269137,
+    "voting_majority": 46.85059864653827,
+    "voting_max": 35.1379489849037,
+    "voting_persistence": 187.4023945861531
+  },
+  {
+    "recall_level": 1.0,
+    "spatial": 281.1035918792296,
+    "voting_mean": 46.85059864653827,
+    "voting_median": 46.85059864653827,
+    "voting_majority": 46.85059864653827,
+    "voting_max": 70.2758979698074,
+    "voting_persistence": 281.1035918792296
+  }
+]
+--- sweep_baselines split04 finished in 1871.6 s (exit 0)
+=== sweep_baselines split05 ===
+2026-10-21 21:40:56 | INFO    | evaluation.sweep_curve       | sweeping model spatial (variant=spatial)
+2026-10-21 21:40:56 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+2026-10-21 21:40:57 | INFO    | models.builder               | variant spatial -> temporal kind none
+2026-10-21 21:41:32 | INFO    | evaluation.sweep_curve       | sweeping model voting_mean (variant=voting_mean)
+2026-10-21 21:41:32 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+2026-10-21 21:41:32 | INFO    | models.builder               | variant voting_mean -> temporal kind voting
+2026-10-21 21:42:07 | INFO    | evaluation.sweep_curve       | sweeping model voting_median (variant=voting_median)
+2026-10-21 21:42:07 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+2026-10-21 21:42:07 | INFO    | models.builder               | variant voting_median -> temporal kind voting
+2026-10-21 21:42:43 | INFO    | evaluation.sweep_curve       | sweeping model voting_majority (variant=voting_majority)
+2026-10-21 21:42:43 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+2026-10-21 21:42:43 | INFO    | models.builder               | variant voting_majority -> temporal kind voting
+2026-10-21 21:43:18 | INFO    | evaluation.sweep_curve       | sweeping model voting_max (variant=voting_max)
+2026-10-21 21:43:18 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+2026-10-21 21:43:18 | INFO    | models.builder               | variant voting_max -> temporal kind voting
+2026-10-21 21:43:53 | INFO    | evaluation.sweep_curve       | sweeping model voting_persistence (variant=voting_persistence)
+2026-10-21 21:43:53 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+2026-10-21 21:43:53 | INFO    | models.builder               | variant voting_persistence -> temporal kind voting
+2026-10-21 21:44:28 | INFO    | evaluation.sweep_curve       | wrote results\raw\sweep_baselines_split05_seed42.json
+2026-10-21 21:44:28 | INFO    | utils.experiment_registry    | appended experiment sweep_baselines_split05_seed42 to experiments\registry.csv
+[
+  {
+    "recall_level": 0.25,
+    "spatial": 25.714285714285715,
+    "voting_mean": 17.142857142857142,
+    "voting_median": 0.0,
+    "voting_majority": NaN,
+    "voting_max": NaN,
+    "voting_persistence": 25.714285714285715
+  },
+  {
+    "recall_level": 0.5,
+    "spatial": 51.42857142857143,
+    "voting_mean": 34.285714285714285,
+    "voting_median": 25.714285714285715,
+    "voting_majority": NaN,
+    "voting_max": NaN,
+    "voting_persistence": 51.42857142857143
+  },
+  {
+    "recall_level": 0.75,
+    "spatial": 102.85714285714286,
+    "voting_mean": 51.42857142857143,
+    "voting_median": 51.42857142857143,
+    "voting_majority": 51.42857142857143,
+    "voting_max": 51.42857142857143,
+    "voting_persistence": 102.85714285714286
+  },
+  {
+    "recall_level": 1.0,
+    "spatial": 154.28571428571428,
+    "voting_mean": 154.28571428571428,
+    "voting_median": 154.28571428571428,
+    "voting_majority": 154.28571428571428,
+    "voting_max": 154.28571428571428,
+    "voting_persistence": 154.28571428571428
+  }
+]
+--- sweep_baselines split05 finished in 214.6 s (exit 0)
+all sweeps finished

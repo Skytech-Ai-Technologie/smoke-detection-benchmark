@@ -1,0 +1,147 @@
+{
+  "split": "split04",
+  "role": "test",
+  "model": "D:\\papier 3 2027\\results\\raw\\tcn_split04_seed42\\model_calibrated.pt",
+  "spatial_checkpoint": "D:\\papier 3 2027\\results\\raw\\spatial_split04_seed42\\model.pt",
+  "device": "cuda",
+  "n_frames": 7383,
+  "n_bins": 10,
+  "brightness_median": 133.06288146972656,
+  "motion_median": 3.1262741088867188,
+  "overall": {
+    "ece": 0.3704151693755535,
+    "mce": 0.6966860524097058,
+    "brier": 0.37010868453497464,
+    "n_bins": 10
+  },
+  "reliability_bins": [
+    {
+      "bin": 0,
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 4898,
+      "confidence": 5.582765083169603e-06,
+      "accuracy": 0.38587178440179665
+    },
+    {
+      "bin": 1,
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 6,
+      "confidence": 0.13664728092362752,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "bin": 2,
+      "lower": 0.2,
+      "upper": 0.30000000000000004,
+      "count": 26,
+      "confidence": 0.2510571604795516,
+      "accuracy": 0.8076923076923077
+    },
+    {
+      "bin": 3,
+      "lower": 0.30000000000000004,
+      "upper": 0.4,
+      "count": 6,
+      "confidence": 0.3491694620743105,
+      "accuracy": 0.5
+    },
+    {
+      "bin": 4,
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 3,
+      "confidence": 0.45052371294441623,
+      "accuracy": 1.0
+    },
+    {
+      "bin": 5,
+      "lower": 0.5,
+      "upper": 0.6000000000000001,
+      "count": 5,
+      "confidence": 0.5462129490215111,
+      "accuracy": 0.6
+    },
+    {
+      "bin": 6,
+      "lower": 0.6000000000000001,
+      "upper": 0.7000000000000001,
+      "count": 2,
+      "confidence": 0.6629210632479714,
+      "accuracy": 1.0
+    },
+    {
+      "bin": 7,
+      "lower": 0.7000000000000001,
+      "upper": 0.8,
+      "count": 15,
+      "confidence": 0.7500151749200445,
+      "accuracy": 0.8666666666666667
+    },
+    {
+      "bin": 8,
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 0
+    },
+    {
+      "bin": 9,
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 2422,
+      "confidence": 0.9999602114565578,
+      "accuracy": 0.6610239471511148
+    }
+  ],
+  "subgroups": {
+    "positive_frames": {
+      "ece": 0.5419060593892804,
+      "mce": 0.9999855320722871,
+      "brier": 0.5391893632909119,
+      "n_bins": 10
+    },
+    "negative_frames": {
+      "ece": 0.2149717400034603,
+      "mce": 0.9998826213736697,
+      "brier": 0.21427456598349784,
+      "n_bins": 10
+    },
+    "positive_videos": {
+      "ece": 0.5419060593892804,
+      "mce": 0.9999855320722871,
+      "brier": 0.5391893632909119,
+      "n_bins": 10
+    },
+    "negative_videos": {
+      "ece": 0.2149717400034603,
+      "mce": 0.9998826213736697,
+      "brier": 0.21427456598349784,
+      "n_bins": 10
+    },
+    "bright_scenes": {
+      "ece": 0.20037630202522994,
+      "mce": 0.8661718497086544,
+      "brier": 0.20023639484936173,
+      "n_bins": 10
+    },
+    "dark_scenes": {
+      "ece": 0.5415652068375214,
+      "mce": 0.9159983573755514,
+      "brier": 0.5400269975989906,
+      "n_bins": 10
+    },
+    "high_motion_scenes": {
+      "ece": 0.5048145166575602,
+      "mce": 0.8421261616666302,
+      "brier": 0.504201629989631,
+      "n_bins": 10
+    },
+    "low_motion_scenes": {
+      "ece": 0.23597940937415335,
+      "mce": 0.23617136659436008,
+      "brier": 0.23597940937415335,
+      "n_bins": 10
+    }
+  }
+}

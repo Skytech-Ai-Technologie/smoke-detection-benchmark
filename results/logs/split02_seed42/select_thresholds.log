@@ -1,0 +1,95 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-21 15:57:21 | INFO    | training.select_thresholds   | selecting the operating point on 3 validation videos
+2026-10-21 15:57:21 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split02_seed42\model.pt (sha256=ec27dfbe348ec131)
+2026-10-21 15:57:21 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\tcn_split02_seed42\model_calibrated.pt (sha256=95a4b5ef05544971)
+2026-10-21 15:59:48 | INFO    | training.select_thresholds   | cached 3 validation streams
+2026-10-21 15:59:48 | INFO    | training.select_thresholds   | threshold=0.10 persistence=0.0s -> recall=1.000 fa/h=871.37
+2026-10-21 15:59:48 | INFO    | training.select_thresholds   | threshold=0.10 persistence=0.2s -> recall=1.000 fa/h=746.89
+2026-10-21 15:59:48 | INFO    | training.select_thresholds   | threshold=0.10 persistence=0.5s -> recall=1.000 fa/h=746.89
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.10 persistence=1.0s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.10 persistence=1.5s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.10 persistence=2.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.10 persistence=3.0s -> recall=1.000 fa/h=373.44
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.20 persistence=0.0s -> recall=1.000 fa/h=746.89
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.20 persistence=0.2s -> recall=1.000 fa/h=746.89
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.20 persistence=0.5s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.20 persistence=1.0s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.20 persistence=1.5s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.20 persistence=2.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.20 persistence=3.0s -> recall=1.000 fa/h=373.44
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.30 persistence=0.0s -> recall=1.000 fa/h=746.89
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.30 persistence=0.2s -> recall=1.000 fa/h=746.89
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.30 persistence=0.5s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.30 persistence=1.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.30 persistence=1.5s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.30 persistence=2.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.30 persistence=3.0s -> recall=1.000 fa/h=248.96
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.40 persistence=0.0s -> recall=1.000 fa/h=871.37
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.40 persistence=0.2s -> recall=1.000 fa/h=871.37
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.40 persistence=0.5s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.40 persistence=1.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.40 persistence=1.5s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.40 persistence=2.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.40 persistence=3.0s -> recall=1.000 fa/h=373.44
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.50 persistence=0.0s -> recall=1.000 fa/h=871.37
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.50 persistence=0.2s -> recall=1.000 fa/h=746.89
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.50 persistence=0.5s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.50 persistence=1.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.50 persistence=1.5s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.50 persistence=2.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.50 persistence=3.0s -> recall=1.000 fa/h=373.44
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.60 persistence=0.0s -> recall=1.000 fa/h=746.89
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.60 persistence=0.2s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.60 persistence=0.5s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.60 persistence=1.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.60 persistence=1.5s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.60 persistence=2.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.60 persistence=3.0s -> recall=1.000 fa/h=124.48
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.70 persistence=0.0s -> recall=1.000 fa/h=746.89
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.70 persistence=0.2s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.70 persistence=0.5s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.70 persistence=1.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.70 persistence=1.5s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.70 persistence=2.0s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.70 persistence=3.0s -> recall=1.000 fa/h=124.48
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.80 persistence=0.0s -> recall=1.000 fa/h=622.41
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.80 persistence=0.2s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.80 persistence=0.5s -> recall=1.000 fa/h=497.93
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.80 persistence=1.0s -> recall=1.000 fa/h=373.44
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.80 persistence=1.5s -> recall=1.000 fa/h=248.96
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.80 persistence=2.0s -> recall=1.000 fa/h=124.48
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.80 persistence=3.0s -> recall=1.000 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.90 persistence=0.0s -> recall=1.000 fa/h=248.96
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.90 persistence=0.2s -> recall=1.000 fa/h=248.96
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.90 persistence=0.5s -> recall=1.000 fa/h=248.96
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.90 persistence=1.0s -> recall=0.500 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.90 persistence=1.5s -> recall=0.500 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.90 persistence=2.0s -> recall=0.500 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.90 persistence=3.0s -> recall=0.000 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.95 persistence=0.0s -> recall=0.500 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.95 persistence=0.2s -> recall=0.500 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.95 persistence=0.5s -> recall=0.500 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.95 persistence=1.0s -> recall=0.000 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.95 persistence=1.5s -> recall=0.000 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.95 persistence=2.0s -> recall=0.000 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | threshold=0.95 persistence=3.0s -> recall=0.000 fa/h=0.00
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | wrote results\raw\thresholds_split02_seed42.json
+2026-10-21 15:59:49 | INFO    | utils.experiment_registry    | appended experiment thresholds_split02_seed42 to experiments\registry.csv
+2026-10-21 15:59:49 | INFO    | training.select_thresholds   | selected operating point: {
+  "threshold": 0.8,
+  "persistence_seconds": 3.0,
+  "mode": "fixed",
+  "video_recall": 1.0,
+  "video_specificity": 1.0,
+  "false_alarms_per_hour": 0.0,
+  "false_alarm_events": 0,
+  "delay_mean": 5.654415497661991,
+  "delay_p95": 7.539389445557783,
+  "recall_at_0_5s": 0.0,
+  "recall_at_1_0s": 0.0,
+  "recall_at_2_0s": 0.0,
+  "selection_rule": "maximise recall subject to the false-alarm budget",
+  "max_false_alarms_per_hour": 1.0,
+  "false_alarm_penalty": 1.0
+}

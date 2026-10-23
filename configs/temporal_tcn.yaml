@@ -1,0 +1,52 @@
+# Model 4: compact causal TCN temporal detector (the proposed temporal core).
+
+model:
+  type: tcn
+  sequence_length: 16
+  input_features: 16
+  channels: [16, 16, 16]
+  kernel_size: 3
+  dilations: [1, 2, 4]
+  dropout: 0.10
+  causal: true
+  head_dropout: 0.0
+  horizon: 8
+
+training:
+  epochs: 80
+  batch_size: 128
+  lr: 0.001
+  weight_decay: 0.0001
+  early_stopping_patience: 12
+  horizon_weight: 0.5
+  uncertainty_weight: 0.05
+  log_every: 5
+  use_out_of_fold: true
+  out_of_fold_folds: 3
+  spatial_epochs: 30
+  spatial_batch_size: 64
+
+policy:
+  mode: adaptive
+  confidence_threshold: 0.60
+  persistence_seconds: 0.80
+  decision_window_seconds: 3.00
+  refractory_seconds: 2.0
+  hysteresis_ratio: 0.6
+  uncertainty_penalty: 0.6
+  motion_bonus: 0.15
+  min_threshold: 0.35
+  max_threshold: 0.90
+  max_persistence_seconds: 3.0
+  frame_skip: false
+  frame_skip_interval: 2
+  frame_skip_confidence: 0.20
+
+data:
+  dataset: firesense
+  feature_dir: data/processed/features
+  manifest: data/manifests/firesense_videos.csv
+  splits_file: data/manifests/splits.csv
+  split: split01
+  pre_onset_guard_frames: 0
+  sequence_stride: 1

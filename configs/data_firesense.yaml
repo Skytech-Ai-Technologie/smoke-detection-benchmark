@@ -1,0 +1,45 @@
+# FIRESENSE smoke-video dataset (primary temporal benchmark).
+#
+# Source: Zenodo record 836749 (official release).
+# The smoke archive contains 13 positive and 9 negative videos.
+dataset: firesense
+source: zenodo
+record_id: 836749
+source_url: https://zenodo.org/records/836749
+license: "CC BY 4.0"
+citation: >-
+  FIRESENSE: a public benchmark for wildfire and smoke detection. Zenodo
+  record 836749. https://doi.org/10.5281/zenodo.836749
+
+# `sha256` values are verified by `python -m src.data.download`; a mismatch
+# aborts the download instead of silently replacing the archive.
+files:
+  - name: smoke_videos.1407.zip
+    url: https://zenodo.org/records/836749/files/smoke_videos.1407.zip?download=1
+    size: 197589846
+    md5: 5ee6bc867c4a9332b4e75f308c26fc23
+    sha256: 876035a132f81119504e9fa53634d56215dd84b29c986d373bff4ee638b37eea
+    description: "FIRESENSE smoke videos: 13 positive and 9 negative recordings."
+
+  - name: fire_videos.1406.zip
+    url: https://zenodo.org/records/836749/files/fire_videos.1406.zip?download=1
+    size: 622676845
+    md5: 7cfe8286cc4b45193149186bf67ea00d
+    sha256: ""
+    description: >-
+      FIRESENSE fire videos. Used only as an *additional spatial pretraining*
+      source because the D-Fire archive cannot be fetched programmatically.
+
+extract:
+  smoke_dir: data/raw/firesense_smoke
+  fire_dir: data/raw/firesense_fire
+
+# The archive ships no onset annotations, so the onset of a positive video is
+# estimated with the documented weak-onset heuristic (see
+# src/data/extract_frames.py::estimate_onset and paper/dataset_card.md).
+annotations:
+  onset_available: false
+  weak_onset:
+    area_ratio: 0.010
+    window_seconds: 2.0
+    support: 0.50

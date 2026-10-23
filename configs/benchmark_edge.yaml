@@ -1,0 +1,82 @@
+# Benchmark protocol: evaluation and edge-deployment settings.
+#
+# Every evaluation mode (offline frame, offline video, online streaming,
+# edge deployment) reads the same front-end, policy and metric settings, so
+# that the four modes cannot silently disagree.
+
+benchmark:
+  # ---- video-level evaluation -------------------------------------------
+  refractory_seconds: 2.0
+  detection_delay_horizons: [0.5, 1.0, 2.0]
+  score_source: temporal
+
+  # ---- frame-level evaluation -------------------------------------------
+  frame_threshold: 0.5
+  calibration_bins: 10
+
+  # ---- edge deployment ---------------------------------------------------
+  edge:
+    device: cpu
+    warmup_frames: 100
+    benchmark_frames: 1000
+    concurrent_streams: [1, 2, 4]
+    dropped_frame_budget: 0
+    # Nominal effective power of the compute device, used to convert the
+    # measured CPU time into joules. Replace with a measured value from an
+    # external power meter when reporting energy numbers.
+    effective_power_watts: 15.0
+    temperature_checkpoints_minutes: [5, 15, 30]
+
+  # ---- statistics --------------------------------------------------------
+  statistics:
+    bootstrap_resamples: 10000
+    bootstrap_confidence: 0.95
+    unit_of_analysis: video
+
+# Front end used by every model in the benchmark.
+front_end:
+  kalman:
+    var_init: 150.0
+    var_process: 4.0
+    var_measurement: 25.0
+    var_acceleration: 0.05
+    distance_threshold: 9.0
+    min_background_frames: 10
+  hsv:
+    max_saturation: 70
+    min_value: 60
+    min_area: 1200
+    min_area_ratio: 0.0048
+    max_area_ratio: 0.60
+    min_aspect_ratio: 0.60
+    max_aspect_ratio: 8.00
+    median_filter_ksize: 5
+    open_iterations: 1
+    close_iterations: 2
+    crop_size: 50
+    max_candidates: 8
+
+# Alarm policy defaults. Individual runs override these on the command line.
+policy:
+  mode: fixed
+  confidence_threshold: 0.70
+  persistence_seconds: 1.50
+  decision_window_seconds: 3.00
+  refractory_seconds: 2.0
+  hysteresis_ratio: 0.6
+  uncertainty_penalty: 0.6
+  motion_bonus: 0.15
+  min_threshold: 0.35
+  max_threshold: 0.90
+  max_persistence_seconds: 3.0
+  frame_skip: false
+  frame_skip_interval: 2
+  frame_skip_confidence: 0.20
+
+data:
+  dataset: firesense
+  feature_dir: data/processed/features
+  manifest: data/manifests/firesense_videos.csv
+  splits_file: data/manifests/splits.csv
+  split: split01
+  role: test

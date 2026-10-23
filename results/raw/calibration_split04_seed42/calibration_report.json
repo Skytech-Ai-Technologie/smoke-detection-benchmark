@@ -1,0 +1,55 @@
+{
+  "n_samples": 1853,
+  "n_positive": 740,
+  "n_videos": 3,
+  "split": "split04",
+  "role": "validation",
+  "methods": {
+    "none": {
+      "ece": 0.060067231737567714,
+      "mce": 0.44814640173230935,
+      "brier": 0.013031511040097858
+    },
+    "temperature": {
+      "ece": 0.002467147252520873,
+      "mce": 0.7942106694584878,
+      "brier": 0.0021077737224705117
+    },
+    "platt": {
+      "ece": 0.002055386069755147,
+      "mce": 0.7800582031341252,
+      "brier": 0.0012017844298158101
+    },
+    "isotonic": {
+      "ece": 0.0,
+      "mce": 0.0,
+      "brier": 0.0008094981111710739
+    }
+  },
+  "selected_method": "isotonic",
+  "calibrator_state": {
+    "method": "isotonic",
+    "x_thresholds_": [
+      -5.2650065422058105,
+      0.055792465806007385,
+      0.08492490649223328,
+      0.16439718008041382,
+      0.22371771931648254,
+      0.25400739908218384,
+      0.26563286781311035,
+      15.231085777282715
+    ],
+    "y_thresholds_": [
+      0.0,
+      0.0,
+      0.25,
+      0.25,
+      0.75,
+      0.75,
+      1.0,
+      1.0
+    ]
+  },
+  "checkpoint": "D:\\papier 3 2027\\results\\raw\\tcn_split04_seed42\\model_calibrated.pt",
+  "checkpoint_sha256": "7f74b6dc506abf56162f54f1d822a42e25c18aaa0785baacf1efd9b7520a92c5"
+}

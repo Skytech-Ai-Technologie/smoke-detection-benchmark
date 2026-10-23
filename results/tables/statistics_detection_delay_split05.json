@@ -1,0 +1,11 @@
+{
+  "metric": "detection_delay",
+  "baseline": "results/raw/video_eval_spatial_split05_seed42.json",
+  "candidate": "results/raw/video_eval_tcn_split05_seed42.json",
+  "n_paired_videos": 7,
+  "baseline_corpus_value": null,
+  "candidate_corpus_value": null,
+  "paired_bootstrap": {},
+  "wilcoxon": {},
+  "per_video": []
+}

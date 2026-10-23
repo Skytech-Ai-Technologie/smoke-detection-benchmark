@@ -1,0 +1,2 @@
+model,device,system_fps,p50_ms,p95_ms,p99_ms,jitter_ms,dropped_frames,peak_ram_mb,peak_vram_mb,stages
+latency_split01_seed42,cpu,165.13,6.061,6.538,7.428,0.247,0,816.0,0.0,"{""decoding"": 0.0, ""kalman"": 3.516153999924427, ""hsv_candidates"": 0.8991106000758009, ""spatial_cnn"": 0.0207278000889346, ""features"": 0.6401586000283714, ""temporal"": 0.961026600227342, ""alarm_policy"": 0.005751399556174874, ""logging"": 0.0}"

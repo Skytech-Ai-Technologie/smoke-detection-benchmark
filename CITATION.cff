@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or the artifacts in this repository, please cite it as below."
+title: "Calibrated Temporal Smoke Detection: an edge-oriented benchmark of Kalman-HSV-CNN and temporal evidence models"
+abstract: >-
+  We present a reproducible benchmark for wildfire/smoke video detection on edge
+  hardware. The benchmark compares a classical Kalman background model + HSV
+  candidate extraction + small CNN pipeline with fixed temporal rules and with
+  calibrated temporal models (GRU, causal TCN, probabilistic evidence accumulator).
+  All splits are performed at video level to prevent frame leakage, and results
+  are reported with video-level false alarms per hour, detection delay,
+  calibration error, latency, and energy per frame.
+type: software
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/REPLACE_WITH_USER/smoke-temporal-detection"
+keywords:
+  - smoke detection
+  - temporal modeling
+  - probability calibration
+  - edge inference
+  - reproducible benchmark
+authors:
+  - name: "REPLACE_WITH_AUTHOR"
+    affiliation: "REPLACE_WITH_INSTITUTION"
+date-released: "2026-01-01"

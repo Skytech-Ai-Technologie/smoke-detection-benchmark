@@ -1,0 +1,9 @@
+stage,ms_per_frame,share
+decoding,0.0000,0.0000
+kalman,3.5162,0.5819
+hsv_candidates,0.8991,0.1488
+spatial_cnn,0.0207,0.0034
+features,0.6402,0.1059
+temporal,0.9610,0.1590
+alarm_policy,0.0058,0.0010
+logging,0.0000,0.0000

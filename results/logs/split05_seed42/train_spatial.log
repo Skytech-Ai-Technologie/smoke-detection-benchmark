@@ -1,0 +1,22 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+<frozen runpy>:128: RuntimeWarning: 'src.training.train_spatial' found in sys.modules after import of package 'src.training', but prior to execution of 'src.training.train_spatial'; this may result in unpredictable behaviour
+2026-10-21 15:47:18 | INFO    | training.train_spatial       | split=split05 | train videos=12 | validation videos=3
+2026-10-21 15:47:18 | INFO    | training.train_spatial       | crops: train=7355 (pos=7051) | val=6674 (pos=5955)
+2026-10-21 15:47:19 | INFO    | training.train_spatial       | MIL objective | train groups=3300 (positive frames=3071) | val groups=2158 (positive frames=1913)
+2026-10-21 15:47:19 | INFO    | training.train_spatial       |   val video firesense_testneg06_812 (negative): 241 candidate frames
+2026-10-21 15:47:19 | INFO    | training.train_spatial       |   val video firesense_testpos01_817 (smoke): 321 candidate frames
+2026-10-21 15:47:19 | INFO    | training.train_spatial       |   val video firesense_testpos04_820 (smoke): 1596 candidate frames
+2026-10-21 15:47:19 | INFO    | training.train_spatial       | cross-validating the spatial model inside the training split
+2026-10-21 15:47:20 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.470
+2026-10-21 15:50:18 | INFO    | training.train_spatial       | out-of-fold fold 1/3 done
+2026-10-21 15:50:18 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.013
+2026-10-21 15:55:17 | INFO    | training.train_spatial       | out-of-fold fold 2/3 done
+2026-10-21 15:55:18 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.069
+2026-10-21 16:00:58 | INFO    | training.train_spatial       | out-of-fold fold 3/3 done
+2026-10-21 16:00:58 | INFO    | training.train_spatial       | selected 1 epochs by cross-validation
+2026-10-21 16:00:58 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.075
+2026-10-21 16:01:10 | INFO    | training.train_spatial       | epoch   0 | train 0.0757 | val 0.3968 | val AUC 0.9328
+2026-10-21 16:01:10 | INFO    | utils.checkpoints            | saved checkpoint D:\papier 3 2027\results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+2026-10-21 16:01:18 | INFO    | utils.experiment_registry    | appended experiment spatial_split05_seed42_firesense to experiments\registry.csv
+2026-10-21 16:01:18 | INFO    | training.train_spatial       | saved experiment to results\raw\spatial_split05_seed42_firesense

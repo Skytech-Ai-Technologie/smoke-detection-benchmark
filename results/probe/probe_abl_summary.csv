@@ -1,0 +1,5 @@
+ablation,description,video_recall,video_specificity,false_alarms_per_hour,delay_mean,delay_p95,recall_at_0_5s,recall_at_1_0s,recall_at_2_0s,n_false_alarm_events
+full,The complete proposed system (causal TCN + adaptive policy).,1.0,0.0,126.76056338028171,1.3868307813552012,1.4579156312479145,0.0,0.0,1.0,
+cnn_only,"Frame probability only, no temporal model (thresholded at 0.5).",1.0,0.0,126.76056338028171,0.0,0.0,1.0,1.0,1.0,
+fixed_voting_mean,Moving average of the frame probability over 3 s.,1.0,0.0,126.76056338028171,0.0,0.0,1.0,1.0,1.0,
+no_kalman_motion_model,The Kalman foreground mask does not gate the candidates.,1.0,0.0,126.76056338028171,1.3868307813552012,1.4579156312479145,0.0,0.0,1.0,

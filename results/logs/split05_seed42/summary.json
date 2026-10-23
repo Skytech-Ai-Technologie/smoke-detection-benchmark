@@ -1,0 +1,38 @@
+{
+  "split": "split05",
+  "seed": 42,
+  "steps": {
+    "train_spatial": {
+      "exit_code": 0,
+      "command": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.training.train_spatial --config configs/baseline_kalman_hsv_cnn.yaml --dataset firesense --split split05 --seed 42 --device cuda --out D:\\papier 3 2027\\results\\raw\\spatial_split05_seed42\\model.pt"
+    },
+    "train_temporal": {
+      "exit_code": 0,
+      "command": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.training.train_temporal --config configs/temporal_tcn.yaml --spatial-checkpoint D:\\papier 3 2027\\results\\raw\\spatial_split05_seed42\\model.pt --split split05 --seed 42 --device cuda --out D:\\papier 3 2027\\results\\raw\\tcn_split05_seed42\\model.pt"
+    },
+    "calibrate": {
+      "exit_code": 0,
+      "command": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.training.calibrate --checkpoint D:\\papier 3 2027\\results\\raw\\tcn_split05_seed42\\model.pt --spatial-checkpoint D:\\papier 3 2027\\results\\raw\\spatial_split05_seed42\\model.pt --method isotonic --split split05 --device cuda --out D:\\papier 3 2027\\results\\raw\\tcn_split05_seed42\\model_calibrated.pt"
+    },
+    "select_thresholds": {
+      "exit_code": 0,
+      "command": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.training.select_thresholds --model D:\\papier 3 2027\\results\\raw\\tcn_split05_seed42\\model_calibrated.pt --spatial-checkpoint D:\\papier 3 2027\\results\\raw\\spatial_split05_seed42\\model.pt --split split05 --device cuda --max-false-alarms-per-hour 1.0 --out-dir results/raw --tag thresholds_split05_seed42"
+    },
+    "evaluate_frame": {
+      "exit_code": 0,
+      "command": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.evaluation.evaluate_frame --config configs/benchmark_edge.yaml --model D:\\papier 3 2027\\results\\raw\\tcn_split05_seed42\\model_calibrated.pt --spatial-checkpoint D:\\papier 3 2027\\results\\raw\\spatial_split05_seed42\\model.pt --split split05 --role test --policy-file D:\\papier 3 2027\\results\\raw\\thresholds_split05_seed42.json --tag frame_eval_split05_seed42 --out-dir results/raw"
+    },
+    "evaluate_video": {
+      "exit_code": 0,
+      "command": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.evaluation.evaluate_video --config configs/benchmark_edge.yaml --model D:\\papier 3 2027\\results\\raw\\tcn_split05_seed42\\model_calibrated.pt --spatial-checkpoint D:\\papier 3 2027\\results\\raw\\spatial_split05_seed42\\model.pt --split split05 --role test --policy-file D:\\papier 3 2027\\results\\raw\\thresholds_split05_seed42.json --tag video_eval_split05_seed42 --out-dir results/raw"
+    },
+    "evaluate_calibration": {
+      "exit_code": 0,
+      "command": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.evaluation.evaluate_calibration --config configs/benchmark_edge.yaml --model D:\\papier 3 2027\\results\\raw\\tcn_split05_seed42\\model_calibrated.pt --spatial-checkpoint D:\\papier 3 2027\\results\\raw\\spatial_split05_seed42\\model.pt --split split05 --role test --tag calibration_eval_split05_seed42 --out-dir results/raw"
+    },
+    "sweep_curve": {
+      "exit_code": 0,
+      "command": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.evaluation.sweep_curve --models spatial=none tcn=D:\\papier 3 2027\\results\\raw\\tcn_split05_seed42\\model_calibrated.pt --spatial-checkpoint D:\\papier 3 2027\\results\\raw\\spatial_split05_seed42\\model.pt --split split05 --role test --device cuda --out-dir results/raw --tag sweep_split05_seed42"
+    }
+  }
+}

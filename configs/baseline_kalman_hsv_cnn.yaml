@@ -1,0 +1,84 @@
+# Model 0 / Model 1: the classical Kalman-HSV-CNN baseline and the spatial
+# candidate classifier.
+#
+# `model`   -- architecture of the small CNN over 50x50 candidate crops.
+# `training`-- optimisation, early stopping and the augmentation policy.
+# `policy`  -- the fixed alarm rule of the original system.
+# `data`    -- where the cached features and the split registry live.
+
+model:
+  type: spatial_cnn
+  input_size: [50, 50]
+  channels: [16, 32, 64]
+  kernels: [3, 3, 3]
+  activation: leaky_relu
+  dropout: 0.50
+  normalization: batch_norm
+  num_outputs: 1
+  in_channels: 3
+
+training:
+  # FIRESENSE has no region-level smoke annotation, so the spatial classifier
+  # is trained with the weakly-supervised (MIL) frame-level objective.
+  objective: mil
+  negative_top_k: 1
+  select_epochs_by_cv: true
+  epochs: 40
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  class_weighting: true
+  early_stopping_patience: 10
+  log_every: 5
+  augment: true
+  augment_config:
+    enabled: true
+    horizontal_flip: 0.5
+    brightness_jitter: 0.20
+    contrast_jitter: 0.20
+    hue_jitter: 6.0
+    saturation_jitter: 0.20
+    gaussian_noise_std: 3.0
+    gaussian_blur_prob: 0.15
+    rotate_limit: 8.0
+    scale_limit: 0.10
+
+# The fixed-threshold alarm rule of the original system.
+policy:
+  mode: fixed
+  confidence_threshold: 0.70
+  persistence_seconds: 1.50
+  decision_window_seconds: 3.00
+  refractory_seconds: 2.0
+  hysteresis_ratio: 0.6
+
+# The Kalman background model and the HSV candidate extraction.
+front_end:
+  kalman:
+    var_init: 150.0
+    var_process: 4.0
+    var_measurement: 25.0
+    var_acceleration: 0.05
+    distance_threshold: 9.0
+    min_background_frames: 10
+  hsv:
+    max_saturation: 70
+    min_value: 60
+    min_area: 1200
+    min_area_ratio: 0.0048
+    max_area_ratio: 0.60
+    min_aspect_ratio: 0.60
+    max_aspect_ratio: 8.00
+    median_filter_ksize: 5
+    open_iterations: 1
+    close_iterations: 2
+    crop_size: 50
+    max_candidates: 8
+
+data:
+  dataset: firesense
+  feature_dir: data/processed/features
+  manifest: data/manifests/firesense_videos.csv
+  splits_file: data/manifests/splits.csv
+  split: split01
+  pre_onset_guard_frames: 0

@@ -1,0 +1,49 @@
+{
+  "model": "results/raw/tcn_split01_seed42/model_calibrated.pt",
+  "spatial_checkpoint": "results/raw/spatial_split01_seed42/model.pt",
+  "device": "cpu",
+  "effective_power_watts": 15.0,
+  "baseline": {
+    "wall_time_s": 180.01689669999178,
+    "cpu_time_s": 2118.203125,
+    "n_frames": 27601,
+    "cpu_ms_per_frame": 76.74370946704829,
+    "effective_power_watts": 15.0,
+    "estimated_energy_j_per_frame": 1.1511556420057245,
+    "video": "data/raw/firesense_smoke/neg/testneg02.808.avi",
+    "skipped_frames": 0,
+    "skip_ratio": 0.0,
+    "stage_ms_per_frame": {
+      "decoding": 0.0,
+      "kalman": 0.06848747146411094,
+      "hsv_candidates": 0.017369066350642556,
+      "spatial_cnn": 4.7335225999783707e-05,
+      "features": 0.01246583095244066,
+      "temporal": 0.01952994456425552,
+      "alarm_policy": 0.00010553240253274927,
+      "logging": 0.0
+    }
+  },
+  "frame_skipping": {
+    "wall_time_s": 180.01249739999184,
+    "cpu_time_s": 2071.828125,
+    "n_frames": 28451,
+    "cpu_ms_per_frame": 72.82092457207128,
+    "effective_power_watts": 15.0,
+    "estimated_energy_j_per_frame": 1.0923138685810692,
+    "video": "data/raw/firesense_smoke/neg/testneg02.808.avi",
+    "skipped_frames": 0,
+    "skip_ratio": 0.0,
+    "stage_ms_per_frame": {
+      "decoding": 0.0,
+      "kalman": 0.030651217877472287,
+      "hsv_candidates": 0.007730494542053601,
+      "spatial_cnn": 2.3081786995865924e-05,
+      "features": 0.005758089345003982,
+      "temporal": 0.009260630549394456,
+      "alarm_policy": 5.16888729347461e-05,
+      "logging": 0.0
+    }
+  },
+  "energy_reduction_percent": 5.111539332955184
+}

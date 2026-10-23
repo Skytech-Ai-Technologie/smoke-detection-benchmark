@@ -1,0 +1,10 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-21 16:06:41 | INFO    | evaluation.common            | applied the operating point from D:\papier 3 2027\results\raw\thresholds_split05_seed42.json: {'mode': 'fixed', 'confidence_threshold': 0.7, 'persistence_seconds': 1.0}
+2026-10-21 16:06:42 | INFO    | evaluation.evaluate_frame    | evaluating 7 videos (split05 / test)
+2026-10-21 16:06:42 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+2026-10-21 16:06:42 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\tcn_split05_seed42\model_calibrated.pt (sha256=d9ff468cccf13696)
+2026-10-21 16:07:53 | INFO    | evaluation.common            | wrote results\raw\frame_eval_split05_seed42.json
+2026-10-21 16:07:53 | INFO    | evaluation.evaluate_frame    | wrote results\raw\frame_eval_split05_seed42_per_video.csv
+2026-10-21 16:07:53 | INFO    | utils.experiment_registry    | appended experiment frame_eval_split05_seed42 to experiments\registry.csv
+2026-10-21 16:07:53 | INFO    | evaluation.evaluate_frame    | frame metrics | precision=0.5528 recall=1.0000 f1=0.7120 auroc=0.5249 auprc=0.5821 ece=0.1857

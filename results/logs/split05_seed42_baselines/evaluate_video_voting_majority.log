@@ -1,0 +1,10 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-21 19:34:01 | INFO    | evaluation.common            | applied the operating point from D:\papier 3 2027\results\raw\thresholds_voting_majority_split05_seed42.json: {'mode': 'fixed', 'confidence_threshold': 0.1, 'persistence_seconds': 0.2}
+2026-10-21 19:34:02 | INFO    | evaluation.evaluate_video    | evaluating 7 videos (split05 / test)
+2026-10-21 19:34:02 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+2026-10-21 19:34:02 | INFO    | models.builder               | variant voting_majority -> temporal kind voting
+2026-10-21 19:34:49 | INFO    | evaluation.common            | wrote results\raw\video_eval_voting_majority_split05_seed42.json
+2026-10-21 19:34:49 | INFO    | evaluation.evaluate_video    | wrote results\raw\video_eval_voting_majority_split05_seed42_per_video.csv
+2026-10-21 19:34:49 | INFO    | utils.experiment_registry    | appended experiment video_eval_voting_majority_split05_seed42 to experiments\registry.csv
+2026-10-21 19:34:49 | INFO    | evaluation.evaluate_video    | video metrics | recall=1.000 specificity=0.000 fa/h=205.714 delay_mean=2.74s delay_p95=5.71s

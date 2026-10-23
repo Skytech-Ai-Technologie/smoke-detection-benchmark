@@ -1,0 +1,59 @@
+{
+  "metric": "false_alarms_per_hour",
+  "baseline": "results/raw/video_eval_spatial_split05_seed42.json",
+  "candidate": "results/raw/video_eval_tcn_split05_seed42.json",
+  "n_paired_videos": 7,
+  "baseline_corpus_value": 154.28571428571428,
+  "candidate_corpus_value": 51.42857142857143,
+  "paired_bootstrap": {
+    "mean_difference": -0.2857142857142857,
+    "ci_lower": -0.8571428571428571,
+    "ci_upper": 0.0,
+    "p_value": 0.5964,
+    "n_pairs": 7,
+    "n_resamples": 10000,
+    "confidence": 0.95
+  },
+  "wilcoxon": {
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "n_pairs": 7
+  },
+  "per_video": [
+    {
+      "video_id": "firesense_testneg01_807",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testneg07_813",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testneg09_815",
+      "baseline": 3.0,
+      "candidate": 1.0
+    },
+    {
+      "video_id": "firesense_testpos03_819",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testpos07_823",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testpos11_827",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testpos13_829",
+      "baseline": 0.0,
+      "candidate": 0.0
+    }
+  ]
+}

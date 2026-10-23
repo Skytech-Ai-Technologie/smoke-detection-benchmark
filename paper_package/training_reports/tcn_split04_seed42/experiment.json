@@ -1,0 +1,17 @@
+{
+  "checkpoint": "D:\\papier 3 2027\\results\\raw\\tcn_split04_seed42\\model.pt",
+  "checkpoint_sha256": "ba9f1e91f07f33e8409970b7db995fa5bb11d105f3310210b4f3d008446052c1",
+  "command": "D:\\papier 3 2027\\src\\training\\train_temporal.py --config configs/temporal_tcn.yaml --spatial-checkpoint D:\\papier 3 2027\\results\\raw\\spatial_split04_seed42\\model.pt --split split04 --seed 42 --device cuda --out D:\\papier 3 2027\\results\\raw\\tcn_split04_seed42\\model.pt",
+  "config_sha256": "9f991dc340d14841ac10389198cc1875d1075029fd0d79049abc9bcbc1c911de",
+  "dataset_manifest_sha256": "657534700427de2b23eb62bbb18f4d54af99698e3c0aebbb0250f2a150e29f6f",
+  "device": "cuda",
+  "experiment_id": "tcn_split04_seed42",
+  "git_commit": "unknown",
+  "metrics_json": "{\"best_epoch\": 11, \"best_val_loss\": 0.07463959421341618, \"n_train_windows\": 7691, \"n_val_windows\": 1853}",
+  "model": "tcn",
+  "notes": "stage C",
+  "precision": "fp32",
+  "seed": 42,
+  "split": "split04",
+  "timestamp_utc": "2026-10-21T15:08:50+00:00"
+}

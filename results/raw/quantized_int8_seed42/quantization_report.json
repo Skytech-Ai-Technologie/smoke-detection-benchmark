@@ -1,0 +1,19 @@
+{
+  "mode": "int8",
+  "source_checkpoint": "results/raw/tcn_split01_seed42/model_calibrated.pt",
+  "source_sha256": "d63bf3f9832dd04f4b70f139c48b410af41ee9eb1c71d0ce34b254d24250d68b",
+  "calibration_manifest": "data/manifests/split01_train.csv",
+  "n_calibration_videos": 12,
+  "comparison": {
+    "max_abs_diff": 0.0670938491821289,
+    "mean_abs_diff": 0.021565165370702744,
+    "mean_relative_diff": 0.01697622239589691,
+    "logit_std": 3.0860707759857178
+  },
+  "sizes": {
+    "int8_bytes": 26416,
+    "fp32_bytes": 23920
+  },
+  "checkpoint": "results\\raw\\quantized_int8_seed42\\model_int8.pt",
+  "checkpoint_sha256": "6bad2e5feae5ef06fc91b8943b0277a064122f19577b9032f875fe54e838d8de"
+}

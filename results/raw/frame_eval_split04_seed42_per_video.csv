@@ -1,0 +1,8 @@
+video_id,label,precision,recall,f1,balanced_accuracy,mcc,accuracy,specificity,n_true_positive,n_false_positive,n_true_negative,n_false_negative,n_frames,n_positive_frames,threshold,auroc,auprc
+firesense_testneg04_810,negative,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0,0,2840,0,2840,0,0.5,nan,nan
+firesense_testneg06_812,negative,0.0,0.0,0.0,0.0,0.0,0.5856573705179283,0.5856573705179283,0,104,147,0,251,0,0.5,nan,nan
+firesense_testneg08_814,negative,0.0,0.0,0.0,0.0,0.0,0.03994673768308921,0.03994673768308921,0,721,30,0,751,0,0.5,nan,nan
+firesense_testpos04_820,smoke,1.0,0.6476578411405295,0.7861557478368356,0.0,0.0,0.6476578411405295,0.0,1272,0,0,692,1964,1964,0.5,nan,nan
+firesense_testpos05_821,smoke,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,514,514,514,0.5,nan,nan
+firesense_testpos07_823,smoke,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,701,701,701,0.5,nan,nan
+firesense_testpos12_828,smoke,1.0,0.9585635359116023,0.9788434414668548,0.0,0.0,0.9585635359116023,0.0,347,0,0,15,362,362,0.5,nan,nan

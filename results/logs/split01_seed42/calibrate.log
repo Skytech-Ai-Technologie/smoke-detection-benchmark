@@ -1,0 +1,31 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+<frozen runpy>:128: RuntimeWarning: 'src.training.calibrate' found in sys.modules after import of package 'src.training', but prior to execution of 'src.training.calibrate'; this may result in unpredictable behaviour
+2026-10-21 16:10:30 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 16:10:30 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\tcn_split01_seed42\model.pt (sha256=4e8840115d96ec5f)
+2026-10-21 16:10:33 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\tcn_split01_seed42\model.pt (sha256=4e8840115d96ec5f)
+2026-10-21 16:10:33 | INFO    | utils.checkpoints            | saved checkpoint D:\papier 3 2027\results\raw\tcn_split01_seed42\model_calibrated.pt (sha256=d63bf3f9832dd04f)
+2026-10-21 16:10:33 | WARNING | utils.experiment_registry    | experiment directory already populated; using results\raw\calibration_split01_seed42__aaf64fa0
+2026-10-21 16:10:33 | INFO    | utils.experiment_registry    | appended experiment calibration_split01_seed42 to experiments\registry.csv
+2026-10-21 16:10:33 | INFO    | training.calibrate           | calibration report: {
+  "none": {
+    "ece": 0.16317328835592382,
+    "mce": 0.8786757390202956,
+    "brier": 0.159044995713025
+  },
+  "temperature": {
+    "ece": 0.19435549876221817,
+    "mce": 0.9132838254403359,
+    "brier": 0.15893811716633668
+  },
+  "platt": {
+    "ece": 0.0044059485622249,
+    "mce": 0.004720393647681731,
+    "brier": 0.08864704162849944
+  },
+  "isotonic": {
+    "ece": 0.0,
+    "mce": 0.0,
+    "brier": 0.0875178309720416
+  }
+}

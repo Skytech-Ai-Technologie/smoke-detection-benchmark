@@ -1,0 +1,50 @@
+# D-Fire dataset (spatial pretraining).
+#
+# The official repository hosts the download links on OneDrive and Kaggle,
+# both of which require interactive authentication. The archive therefore
+# CANNOT be fetched by `python -m src.data.download`; it has to be obtained
+# manually and placed in `data/raw/downloads/` with the expected name.
+#
+# See paper/dataset_card.md ("D-Fire acquisition") for the exact procedure.
+dataset: dfire
+source: github
+source_url: https://github.com/gaia-solutions-on-demand/DFireDataset
+license: "See the official repository and the D-Fire dataset card."
+citation: >-
+  D-Fire: an image dataset for fire and smoke detection with YOLO-format
+  bounding-box annotations. https://github.com/gaia-solutions-on-demand/DFireDataset
+
+files:
+  - name: DFire_dataset.zip
+    url: ""
+    size: null
+    md5: ""
+    sha256: ""
+    description: "D-Fire images + YOLO labels (manual acquisition, see notes)."
+    manual: true
+
+manual_acquisition:
+  instructions: |
+    1. Open https://github.com/gaia-solutions-on-demand/DFireDataset
+    2. Download the "images and labels" archive from the linked OneDrive or
+       Kaggle dataset (Kaggle slug: davidmchaparro/dfire).
+    3. Place the archive in data/raw/downloads/DFire_dataset.zip
+    4. Run:  python -m src.data.download --config configs/data_dfire.yaml
+       The script records the SHA-256 of whatever it finds, so the manifest
+       hash pins the exact dataset version that produced the results.
+    5. Extract to data/raw/dfire/ with the layout below.
+
+expected_layout:
+  images: data/raw/dfire/images/train
+  labels: data/raw/dfire/labels/train
+  annotation_format: "YOLO: <class_id> <x_center> <y_center> <width> <height>, normalised"
+  classes:
+    0: fire
+    1: smoke
+
+splits:
+  # D-Fire ships an official train/val/test split; it is used for the
+  # *spatial* stage only and never as a temporal benchmark.
+  train: data/raw/dfire/images/train
+  validation: data/raw/dfire/images/val
+  test: data/raw/dfire/images/test

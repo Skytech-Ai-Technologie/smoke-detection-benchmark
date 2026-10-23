@@ -1,0 +1,8 @@
+video_id,label,precision,recall,f1,balanced_accuracy,mcc,accuracy,specificity,n_true_positive,n_false_positive,n_true_negative,n_false_negative,n_frames,n_positive_frames,threshold,auroc,auprc
+firesense_testneg01_807,negative,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,251,0,0,251,0,0.5,nan,nan
+firesense_testneg07_813,negative,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,776,0,0,776,0,0.5,nan,nan
+firesense_testneg09_815,negative,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,723,0,0,723,0,0.5,nan,nan
+firesense_testpos03_819,smoke,1.0,1.0,1.0,0.0,0.0,1.0,0.0,322,0,0,0,322,322,0.5,nan,nan
+firesense_testpos07_823,smoke,1.0,1.0,1.0,0.0,0.0,1.0,0.0,701,0,0,0,701,701,0.5,nan,nan
+firesense_testpos11_827,smoke,1.0,1.0,1.0,0.0,0.0,1.0,0.0,677,0,0,0,677,677,0.5,nan,nan
+firesense_testpos13_829,smoke,1.0,1.0,1.0,0.0,0.0,1.0,0.0,463,0,0,0,463,463,0.5,nan,nan

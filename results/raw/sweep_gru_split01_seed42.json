@@ -1,0 +1,715 @@
+{
+  "split": "split01",
+  "role": "test",
+  "mode": "fixed",
+  "device": "cuda",
+  "curves": {
+    "gru": {
+      "model": "gru",
+      "points": [
+        {
+          "model": "gru",
+          "threshold": 0.05,
+          "persistence_seconds": 0.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 422.5352112676057,
+          "false_alarm_events": 10,
+          "delay_mean": 2.325002,
+          "delay_p95": 6.785001199999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.05,
+          "persistence_seconds": 0.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 338.0281690140846,
+          "false_alarm_events": 8,
+          "delay_mean": 2.6950851719481443,
+          "delay_p95": 7.185001499999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.05,
+          "persistence_seconds": 1.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 253.52112676056342,
+          "false_alarm_events": 6,
+          "delay_mean": 3.2384419625673537,
+          "delay_p95": 7.690001899999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.05,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 211.26760563380284,
+          "false_alarm_events": 5,
+          "delay_mean": 3.7118327813552012,
+          "delay_p95": 8.185002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.05,
+          "persistence_seconds": 2.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 211.26760563380284,
+          "false_alarm_events": 5,
+          "delay_mean": 4.2018903501430485,
+          "delay_p95": 8.690002649999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.1,
+          "persistence_seconds": 0.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 422.5352112676057,
+          "false_alarm_events": 10,
+          "delay_mean": 2.325002,
+          "delay_p95": 6.785001199999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.1,
+          "persistence_seconds": 0.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 338.0281690140846,
+          "false_alarm_events": 8,
+          "delay_mean": 2.6950851719481443,
+          "delay_p95": 7.185001499999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.1,
+          "persistence_seconds": 1.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 253.52112676056342,
+          "false_alarm_events": 6,
+          "delay_mean": 3.2384419625673537,
+          "delay_p95": 7.690001899999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.1,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 211.26760563380284,
+          "false_alarm_events": 5,
+          "delay_mean": 3.7118327813552012,
+          "delay_p95": 8.185002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.1,
+          "persistence_seconds": 2.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 211.26760563380284,
+          "false_alarm_events": 5,
+          "delay_mean": 4.2018903501430485,
+          "delay_p95": 8.690002649999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.2,
+          "persistence_seconds": 0.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 422.5352112676057,
+          "false_alarm_events": 10,
+          "delay_mean": 2.325002,
+          "delay_p95": 6.785001199999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.2,
+          "persistence_seconds": 0.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 338.0281690140846,
+          "false_alarm_events": 8,
+          "delay_mean": 2.6950851719481443,
+          "delay_p95": 7.185001499999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.2,
+          "persistence_seconds": 1.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 253.52112676056342,
+          "false_alarm_events": 6,
+          "delay_mean": 3.2384419625673537,
+          "delay_p95": 7.690001899999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.2,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 211.26760563380284,
+          "false_alarm_events": 5,
+          "delay_mean": 3.7118327813552012,
+          "delay_p95": 8.185002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.2,
+          "persistence_seconds": 2.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 211.26760563380284,
+          "false_alarm_events": 5,
+          "delay_mean": 4.2018903501430485,
+          "delay_p95": 8.690002649999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.3,
+          "persistence_seconds": 0.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 422.5352112676057,
+          "false_alarm_events": 10,
+          "delay_mean": 2.325002,
+          "delay_p95": 6.785001199999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.3,
+          "persistence_seconds": 0.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 338.0281690140846,
+          "false_alarm_events": 8,
+          "delay_mean": 2.6950851719481443,
+          "delay_p95": 7.185001499999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.3,
+          "persistence_seconds": 1.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 253.52112676056342,
+          "false_alarm_events": 6,
+          "delay_mean": 3.2384419625673537,
+          "delay_p95": 7.690001899999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.3,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 211.26760563380284,
+          "false_alarm_events": 5,
+          "delay_mean": 3.7118327813552012,
+          "delay_p95": 8.185002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.3,
+          "persistence_seconds": 2.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 211.26760563380284,
+          "false_alarm_events": 5,
+          "delay_mean": 4.2018903501430485,
+          "delay_p95": 8.690002649999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.4,
+          "persistence_seconds": 0.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 422.5352112676057,
+          "false_alarm_events": 10,
+          "delay_mean": 2.325002,
+          "delay_p95": 6.785001199999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.4,
+          "persistence_seconds": 0.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 338.0281690140846,
+          "false_alarm_events": 8,
+          "delay_mean": 2.6950851719481443,
+          "delay_p95": 7.185001499999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.4,
+          "persistence_seconds": 1.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 253.52112676056342,
+          "false_alarm_events": 6,
+          "delay_mean": 3.2384419625673537,
+          "delay_p95": 7.690001899999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.4,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 3.7118327813552012,
+          "delay_p95": 8.185002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.4,
+          "persistence_seconds": 2.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 4.2018903501430485,
+          "delay_p95": 8.690002649999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.5,
+          "persistence_seconds": 0.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 422.5352112676057,
+          "false_alarm_events": 10,
+          "delay_mean": 2.325002,
+          "delay_p95": 6.785001199999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.5,
+          "persistence_seconds": 0.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 338.0281690140846,
+          "false_alarm_events": 8,
+          "delay_mean": 2.6950851719481443,
+          "delay_p95": 7.185001499999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.5,
+          "persistence_seconds": 1.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 253.52112676056342,
+          "false_alarm_events": 6,
+          "delay_mean": 3.2384419625673537,
+          "delay_p95": 7.690001899999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.5,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 3.7118327813552012,
+          "delay_p95": 8.185002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.5,
+          "persistence_seconds": 2.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 4.2018903501430485,
+          "delay_p95": 8.690002649999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.6,
+          "persistence_seconds": 0.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 380.2816901408451,
+          "false_alarm_events": 9,
+          "delay_mean": 2.325002,
+          "delay_p95": 6.785001199999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.6,
+          "persistence_seconds": 0.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 338.0281690140846,
+          "false_alarm_events": 8,
+          "delay_mean": 2.6950851719481443,
+          "delay_p95": 7.185001499999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.6,
+          "persistence_seconds": 1.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 253.52112676056342,
+          "false_alarm_events": 6,
+          "delay_mean": 3.2384419625673537,
+          "delay_p95": 7.690001899999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.6,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 3.7118327813552012,
+          "delay_p95": 8.185002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.6,
+          "persistence_seconds": 2.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 4.2018903501430485,
+          "delay_p95": 8.690002649999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.7,
+          "persistence_seconds": 0.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 380.2816901408451,
+          "false_alarm_events": 9,
+          "delay_mean": 2.325002,
+          "delay_p95": 6.785001199999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.7,
+          "persistence_seconds": 0.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 338.0281690140846,
+          "false_alarm_events": 8,
+          "delay_mean": 2.6950851719481443,
+          "delay_p95": 7.185001499999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.7,
+          "persistence_seconds": 1.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 253.52112676056342,
+          "false_alarm_events": 6,
+          "delay_mean": 3.2384419625673537,
+          "delay_p95": 7.690001899999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.7,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 3.7118327813552012,
+          "delay_p95": 8.185002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.7,
+          "persistence_seconds": 2.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 4.2018903501430485,
+          "delay_p95": 8.690002649999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.8,
+          "persistence_seconds": 0.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 380.2816901408451,
+          "false_alarm_events": 9,
+          "delay_mean": 2.350002,
+          "delay_p95": 6.870001199999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.8,
+          "persistence_seconds": 0.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.0,
+          "false_alarms_per_hour": 338.0281690140846,
+          "false_alarm_events": 8,
+          "delay_mean": 2.7200851719481443,
+          "delay_p95": 7.270001499999998
+        },
+        {
+          "model": "gru",
+          "threshold": 0.8,
+          "persistence_seconds": 1.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 211.26760563380284,
+          "false_alarm_events": 5,
+          "delay_mean": 3.2634419625673536,
+          "delay_p95": 7.775001899999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.8,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 3.736832781355201,
+          "delay_p95": 8.270002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.8,
+          "persistence_seconds": 2.0,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 12.426890350143047,
+          "delay_p95": 36.655002649999986
+        },
+        {
+          "model": "gru",
+          "threshold": 0.9,
+          "persistence_seconds": 0.0,
+          "video_recall": 0.5,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 126.76056338028171,
+          "false_alarm_events": 3,
+          "delay_mean": 1.5666745,
+          "delay_p95": 2.97668155
+        },
+        {
+          "model": "gru",
+          "threshold": 0.9,
+          "persistence_seconds": 0.5,
+          "video_recall": 0.5,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 126.76056338028171,
+          "false_alarm_events": 3,
+          "delay_mean": 2.000242400233567,
+          "delay_p95": 3.380040140023356
+        },
+        {
+          "model": "gru",
+          "threshold": 0.9,
+          "persistence_seconds": 1.0,
+          "video_recall": 0.5,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 84.50704225352115,
+          "false_alarm_events": 2,
+          "delay_mean": 2.517160650483817,
+          "delay_p95": 3.9117343650483813
+        },
+        {
+          "model": "gru",
+          "threshold": 0.9,
+          "persistence_seconds": 1.5,
+          "video_recall": 0.5,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 84.50704225352115,
+          "false_alarm_events": 2,
+          "delay_mean": 3.000745400734067,
+          "delay_p95": 4.380094940073406
+        },
+        {
+          "model": "gru",
+          "threshold": 0.9,
+          "persistence_seconds": 2.0,
+          "video_recall": 0.5,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 3.5176636509843178,
+          "delay_p95": 4.9117891650984316
+        },
+        {
+          "model": "gru",
+          "threshold": 0.95,
+          "persistence_seconds": 0.0,
+          "video_recall": 0.25,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 84.50704225352115,
+          "false_alarm_events": 2,
+          "delay_mean": 0.0,
+          "delay_p95": 0.0
+        },
+        {
+          "model": "gru",
+          "threshold": 0.95,
+          "persistence_seconds": 0.5,
+          "video_recall": 0.25,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 0.4671338004671338,
+          "delay_p95": 0.4671338004671338
+        },
+        {
+          "model": "gru",
+          "threshold": 0.95,
+          "persistence_seconds": 1.0,
+          "video_recall": 0.25,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 0.9676343009676344,
+          "delay_p95": 0.9676343009676344
+        },
+        {
+          "model": "gru",
+          "threshold": 0.95,
+          "persistence_seconds": 1.5,
+          "video_recall": 0.25,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 1.4681348014681348,
+          "delay_p95": 1.4681348014681348
+        },
+        {
+          "model": "gru",
+          "threshold": 0.95,
+          "persistence_seconds": 2.0,
+          "video_recall": 0.25,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 1.9686353019686353,
+          "delay_p95": 1.9686353019686353
+        },
+        {
+          "model": "gru",
+          "threshold": 0.99,
+          "persistence_seconds": 0.0,
+          "video_recall": 0.25,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 84.50704225352115,
+          "false_alarm_events": 2,
+          "delay_mean": 0.0,
+          "delay_p95": 0.0
+        },
+        {
+          "model": "gru",
+          "threshold": 0.99,
+          "persistence_seconds": 0.5,
+          "video_recall": 0.25,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 0.4671338004671338,
+          "delay_p95": 0.4671338004671338
+        },
+        {
+          "model": "gru",
+          "threshold": 0.99,
+          "persistence_seconds": 1.0,
+          "video_recall": 0.25,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 0.9676343009676344,
+          "delay_p95": 0.9676343009676344
+        },
+        {
+          "model": "gru",
+          "threshold": 0.99,
+          "persistence_seconds": 1.5,
+          "video_recall": 0.25,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 1.4681348014681348,
+          "delay_p95": 1.4681348014681348
+        },
+        {
+          "model": "gru",
+          "threshold": 0.99,
+          "persistence_seconds": 2.0,
+          "video_recall": 0.25,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 1.9686353019686353,
+          "delay_p95": 1.9686353019686353
+        }
+      ],
+      "pareto_front": [
+        {
+          "model": "gru",
+          "threshold": 0.4,
+          "persistence_seconds": 1.5,
+          "video_recall": 1.0,
+          "video_specificity": 0.3333333333333333,
+          "false_alarms_per_hour": 169.0140845070423,
+          "false_alarm_events": 4,
+          "delay_mean": 3.7118327813552012,
+          "delay_p95": 8.185002249999997
+        },
+        {
+          "model": "gru",
+          "threshold": 0.9,
+          "persistence_seconds": 2.0,
+          "video_recall": 0.5,
+          "video_specificity": 0.6666666666666666,
+          "false_alarms_per_hour": 42.253521126760575,
+          "false_alarm_events": 1,
+          "delay_mean": 3.5176636509843178,
+          "delay_p95": 4.9117891650984316
+        }
+      ]
+    }
+  },
+  "matched_recall_comparison": [
+    {
+      "recall_level": 0.25,
+      "gru": NaN
+    },
+    {
+      "recall_level": 0.5,
+      "gru": 42.253521126760575
+    },
+    {
+      "recall_level": 0.75,
+      "gru": 105.63380281690144
+    },
+    {
+      "recall_level": 1.0,
+      "gru": 169.0140845070423
+    }
+  ]
+}

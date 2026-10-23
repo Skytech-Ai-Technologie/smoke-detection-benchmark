@@ -1,0 +1,22 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+<frozen runpy>:128: RuntimeWarning: 'src.training.train_temporal' found in sys.modules after import of package 'src.training', but prior to execution of 'src.training.train_temporal'; this may result in unpredictable behaviour
+2026-10-21 16:03:21 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split03_seed42\model.pt (sha256=bbd62ee455cf21fa)
+2026-10-21 16:03:22 | INFO    | training.train_temporal      | spatial checkpoint: D:\papier 3 2027\results\raw\spatial_split03_seed42\model.pt (sha256=bbd62ee455cf21fa)
+2026-10-21 16:03:23 | INFO    | training.train_temporal      | computing out-of-fold spatial logits for the training videos
+2026-10-21 16:03:23 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.284
+2026-10-21 16:03:57 | INFO    | training.train_spatial       | early stopping at epoch 8 (best epoch 0)
+2026-10-21 16:03:57 | INFO    | training.train_spatial       | out-of-fold fold 1/3 done
+2026-10-21 16:03:57 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.035
+2026-10-21 16:06:00 | INFO    | training.train_spatial       | out-of-fold fold 2/3 done
+2026-10-21 16:06:00 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.084
+2026-10-21 16:06:35 | INFO    | training.train_spatial       | early stopping at epoch 8 (best epoch 0)
+2026-10-21 16:06:35 | INFO    | training.train_spatial       | out-of-fold fold 3/3 done
+2026-10-21 16:06:36 | INFO    | training.train_temporal      | temporal windows: train=10956 val=2533
+2026-10-21 16:06:38 | INFO    | training.train_temporal      | epoch   0 | train 0.6741 | val 0.5540 | val(now) 0.3201
+2026-10-21 16:06:49 | INFO    | training.train_temporal      | epoch   5 | train 0.1515 | val 0.4188 | val(now) 0.4171
+2026-10-21 16:07:00 | INFO    | training.train_temporal      | epoch  10 | train 0.1287 | val 0.4297 | val(now) 0.4294
+2026-10-21 16:07:07 | INFO    | training.train_temporal      | early stopping at epoch 13 (best epoch 1)
+2026-10-21 16:07:07 | INFO    | utils.checkpoints            | saved checkpoint D:\papier 3 2027\results\raw\tcn_split03_seed42\model.pt (sha256=2f523b720ec28543)
+2026-10-21 16:07:07 | INFO    | utils.experiment_registry    | appended experiment tcn_split03_seed42 to experiments\registry.csv
+2026-10-21 16:07:07 | INFO    | training.train_temporal      | saved experiment to results\raw\tcn_split03_seed42

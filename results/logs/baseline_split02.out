@@ -1,0 +1,38 @@
+=== select_thresholds_spatial ===
+  2026-10-21 19:26:21 | INFO    | training.select_thresholds   | selected operating point: {
+--- select_thresholds_spatial exit 0
+=== evaluate_video_spatial ===
+  2026-10-21 19:28:06 | INFO    | evaluation.evaluate_video    | video metrics | recall=1.000 specificity=0.000 fa/h=422.535 delay_mean=0.00s delay_p95=0.00s
+--- evaluate_video_spatial exit 0
+=== select_thresholds_voting_mean ===
+  2026-10-21 19:29:43 | INFO    | training.select_thresholds   | selected operating point: {
+--- select_thresholds_voting_mean exit 0
+=== evaluate_video_voting_mean ===
+  2026-10-21 19:31:28 | INFO    | evaluation.evaluate_video    | video metrics | recall=1.000 specificity=0.000 fa/h=211.268 delay_mean=0.00s delay_p95=0.00s
+--- evaluate_video_voting_mean exit 0
+=== select_thresholds_voting_median ===
+  2026-10-21 19:33:06 | INFO    | training.select_thresholds   | selected operating point: {
+--- select_thresholds_voting_median exit 0
+=== evaluate_video_voting_median ===
+  2026-10-21 19:34:52 | INFO    | evaluation.evaluate_video    | video metrics | recall=1.000 specificity=0.000 fa/h=211.268 delay_mean=0.00s delay_p95=0.00s
+--- evaluate_video_voting_median exit 0
+=== select_thresholds_voting_majority ===
+  2026-10-21 19:36:38 | INFO    | training.select_thresholds   | selected operating point: {
+--- select_thresholds_voting_majority exit 0
+=== evaluate_video_voting_majority ===
+  2026-10-21 19:38:19 | INFO    | evaluation.evaluate_video    | video metrics | recall=1.000 specificity=0.667 fa/h=70.423 delay_mean=2.61s delay_p95=7.10s
+--- evaluate_video_voting_majority exit 0
+=== select_thresholds_voting_max ===
+  2026-10-21 19:39:55 | INFO    | training.select_thresholds   | selected operating point: {
+--- select_thresholds_voting_max exit 0
+=== evaluate_video_voting_max ===
+  2026-10-21 19:41:40 | INFO    | evaluation.evaluate_video    | video metrics | recall=1.000 specificity=0.000 fa/h=211.268 delay_mean=0.00s delay_p95=0.00s
+--- evaluate_video_voting_max exit 0
+=== select_thresholds_voting_persistence ===
+  2026-10-21 19:43:23 | INFO    | training.select_thresholds   | selected operating point: {
+--- select_thresholds_voting_persistence exit 0
+=== evaluate_video_voting_persistence ===
+  2026-10-21 19:45:11 | INFO    | evaluation.evaluate_video    | video metrics | recall=1.000 specificity=0.000 fa/h=422.535 delay_mean=0.00s delay_p95=0.00s
+--- evaluate_video_voting_persistence exit 0
+=== sweep_baselines ===
+--- sweep_baselines exit 4294967295

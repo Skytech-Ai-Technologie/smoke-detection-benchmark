@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-21T13:10:15+00:00",
+  "seed": 42,
+  "num_splits": 5,
+  "test_fraction": 0.3,
+  "validation_fraction": 0.2,
+  "primary_split": "split01",
+  "files": {
+    "firesense_videos.csv": "ca110b4664f6b676859770da589b8019754b88c11599fb553d962c5d662125ba",
+    "lovo.csv": "9255f34af613aab26a295e177f28b332295acca97b7ceba1743ed0085a91c083",
+    "split01_test.csv": "8025dcf79664d73ac15121bb0ad9492d3559318f59efbe407dd8b78f572bb479",
+    "split01_train.csv": "8d1825c264d125b18876af2eafaed8adfd55036c316d4cd44df47e19b0bfd5a0",
+    "split01_validation.csv": "42d52da0f2cffdbcd4f2fd3b1e331c93ead2815a165978e4b0dd180aeefd7577",
+    "split02_test.csv": "044d48c01dcfd48215324f16e85f17b32adc176fbd40701850242a957e883858",
+    "split02_train.csv": "e58d5517d3850062656f0c825d03cb9d9b12fe1d2235d95ba10af16ffb06ff56",
+    "split02_validation.csv": "9f81cab050b6620e180aafb81ca2d05c8f23ae2672f26b55442f3aa56730036c",
+    "split03_test.csv": "5074ecd65e8e29cf74bd63343c94060cee69c7f8a5ffdea68e1aa82171e51e6e",
+    "split03_train.csv": "8192637d8fe1c168ade5d93520b2c8bb828579db54936adefab8afb7c6007a05",
+    "split03_validation.csv": "1076a6188539c5a1e40209c9eaf3c330f020cddba620e26eaa6918f7fbf5bf2c",
+    "split04_test.csv": "b4cda9da629ff13d4f398b54a6bdf4843bdcdf5e4d5575924d11f3fa5b37ba7a",
+    "split04_train.csv": "c35f8643189e2123896091be781fd3cba45081e0f20ac276554795de711b8b2b",
+    "split04_validation.csv": "a552063aed8b84ab2730319358ab2e661cc0a49c0f834a2f89c3686e71e232e2",
+    "split05_test.csv": "3a9a8a364b6b78b905f937e59bc1dbb451e67ad044dae1b56f95fc9c47d1b4be",
+    "split05_train.csv": "de307c9b2ec0c2c2a38598bfe5c35fc1cafce875f45e3021ad07ec599adb290a",
+    "split05_validation.csv": "23e5641af805c20d153cdb2b5f9fab36b9afd41ae46779f3f0757d11a3d66b21",
+    "splits.csv": "657534700427de2b23eb62bbb18f4d54af99698e3c0aebbb0250f2a150e29f6f",
+    "test.csv": "8025dcf79664d73ac15121bb0ad9492d3559318f59efbe407dd8b78f572bb479",
+    "train.csv": "8d1825c264d125b18876af2eafaed8adfd55036c316d4cd44df47e19b0bfd5a0",
+    "validation.csv": "42d52da0f2cffdbcd4f2fd3b1e331c93ead2815a165978e4b0dd180aeefd7577"
+  }
+}

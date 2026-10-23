@@ -1,0 +1,17 @@
+{
+  "checkpoint": "results\\raw\\gru_split01_seed42\\model.pt",
+  "checkpoint_sha256": "653a3016041cc31405f92ceea4d548dc371d39bb4d60224aaae3a2345a6e0dd0",
+  "command": "D:\\papier 3 2027\\src\\training\\train_temporal.py --config configs/temporal_gru.yaml --spatial-checkpoint results/raw/spatial_split01_seed42/model.pt --device cuda",
+  "config_sha256": "17afdda1640960cb1390b11eb5323e88a72f259b2b2a640294e32fb287a72681",
+  "dataset_manifest_sha256": "657534700427de2b23eb62bbb18f4d54af99698e3c0aebbb0250f2a150e29f6f",
+  "device": "cuda",
+  "experiment_id": "gru_split01_seed42",
+  "git_commit": "unknown",
+  "metrics_json": "{\"best_epoch\": 2, \"best_val_loss\": 0.35388294293692235, \"n_train_windows\": 9394, \"n_val_windows\": 2397}",
+  "model": "gru",
+  "notes": "stage C",
+  "precision": "fp32",
+  "seed": 42,
+  "split": "split01",
+  "timestamp_utc": "2026-10-21T19:36:13+00:00"
+}

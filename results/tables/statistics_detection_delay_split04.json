@@ -1,0 +1,34 @@
+{
+  "metric": "detection_delay",
+  "baseline": "results/raw/video_eval_spatial_split04_seed42.json",
+  "candidate": "results/raw/video_eval_tcn_split04_seed42.json",
+  "n_paired_videos": 7,
+  "baseline_corpus_value": null,
+  "candidate_corpus_value": null,
+  "paired_bootstrap": {
+    "mean_difference": -0.8208016032064128,
+    "ci_lower": -0.8400000000000001,
+    "ci_upper": -0.8016032064128256,
+    "p_value": 0.0,
+    "n_pairs": 2,
+    "n_resamples": 10000,
+    "confidence": 0.95
+  },
+  "wilcoxon": {
+    "statistic": 0.0,
+    "p_value": 0.5,
+    "n_pairs": 2
+  },
+  "per_video": [
+    {
+      "video_id": "firesense_testneg04_810",
+      "baseline": 2.64,
+      "candidate": 1.8
+    },
+    {
+      "video_id": "firesense_testneg06_812",
+      "baseline": 2.271209084836339,
+      "candidate": 1.4696058784235135
+    }
+  ]
+}

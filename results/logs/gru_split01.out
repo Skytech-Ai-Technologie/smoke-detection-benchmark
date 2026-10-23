@@ -1,0 +1,20 @@
+2026-10-21 20:33:22 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 20:33:22 | INFO    | training.train_temporal      | spatial checkpoint: results/raw/spatial_split01_seed42/model.pt (sha256=75522ef3716bf664)
+2026-10-21 20:33:22 | INFO    | training.train_temporal      | computing out-of-fold spatial logits for the training videos
+2026-10-21 20:33:22 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.467
+2026-10-21 20:34:23 | INFO    | training.train_spatial       | early stopping at epoch 11 (best epoch 3)
+2026-10-21 20:34:23 | INFO    | training.train_spatial       | out-of-fold fold 1/3 done
+2026-10-21 20:34:23 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.247
+2026-10-21 20:35:07 | INFO    | training.train_spatial       | early stopping at epoch 8 (best epoch 0)
+2026-10-21 20:35:08 | INFO    | training.train_spatial       | out-of-fold fold 2/3 done
+2026-10-21 20:35:08 | INFO    | training.train_spatial       | MIL frame-class weight for the positive class: 0.114
+2026-10-21 20:35:51 | INFO    | training.train_spatial       | early stopping at epoch 10 (best epoch 2)
+2026-10-21 20:35:51 | INFO    | training.train_spatial       | out-of-fold fold 3/3 done
+2026-10-21 20:35:52 | INFO    | training.train_temporal      | temporal windows: train=9394 val=2397
+2026-10-21 20:35:54 | INFO    | training.train_temporal      | epoch   0 | train 0.7297 | val 1.4835 | val(now) 1.3576
+2026-10-21 20:36:01 | INFO    | training.train_temporal      | epoch   5 | train 0.0378 | val 0.4437 | val(now) 0.4363
+2026-10-21 20:36:08 | INFO    | training.train_temporal      | epoch  10 | train 0.0116 | val 0.6255 | val(now) 0.6190
+2026-10-21 20:36:13 | INFO    | training.train_temporal      | early stopping at epoch 14 (best epoch 2)
+2026-10-21 20:36:13 | INFO    | utils.checkpoints            | saved checkpoint results\raw\gru_split01_seed42\model.pt (sha256=653a3016041cc314)
+2026-10-21 20:36:13 | INFO    | utils.experiment_registry    | appended experiment gru_split01_seed42 to experiments\registry.csv
+2026-10-21 20:36:13 | INFO    | training.train_temporal      | saved experiment to results\raw\gru_split01_seed42

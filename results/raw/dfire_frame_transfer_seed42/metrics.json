@@ -1,0 +1,85 @@
+{
+  "protocol": "50x50 tiles (stride 25, <=400/image); no retrain, no recalibration; DFire = test-only",
+  "checkpoint": "results/raw/spatial_split01_seed42/model.pt",
+  "dfire_root": "D:\\FORFIRE CODES\\forfire1\\wildfire-fusion\\data\\dfire",
+  "seed": 42,
+  "n_images": 3220,
+  "aggregations": {
+    "max_prob": {
+      "aggregation": "MIL max over tiles (saturating by design)",
+      "auroc_smoke_vs_none": {
+        "auroc": 0.42237933333333333,
+        "ap": 0.4412442739545329,
+        "n_pos": 1500,
+        "n_neg": 1500
+      },
+      "auroc_smoke_vs_fire_only": {
+        "auroc": 0.6898393939393939,
+        "ap": 0.9268212136066637,
+        "n_pos": 1500,
+        "n_neg": 220
+      },
+      "score_distribution": {
+        "smoke": {
+          "median": 0.7297737002372742,
+          "mean": 0.714991711417834,
+          "q25": 0.722076416015625,
+          "q75": 0.7308913916349411,
+          "frac_ge_0_5": 1.0
+        },
+        "none": {
+          "median": 0.7305082380771637,
+          "mean": 0.7214911342064539,
+          "q25": 0.7259660065174103,
+          "q75": 0.7309669405221939,
+          "frac_ge_0_5": 1.0
+        },
+        "fire_only": {
+          "median": 0.7113920748233795,
+          "mean": 0.6931351371786811,
+          "q25": 0.6594629883766174,
+          "q75": 0.729970172047615,
+          "frac_ge_0_5": 1.0
+        }
+      }
+    },
+    "mean_prob": {
+      "aggregation": "mean over tiles of the whole image",
+      "auroc_smoke_vs_none": {
+        "auroc": 0.4621902222222222,
+        "ap": 0.4627759096119108,
+        "n_pos": 1500,
+        "n_neg": 1500
+      },
+      "auroc_smoke_vs_fire_only": {
+        "auroc": 0.5773424242424242,
+        "ap": 0.9135327150992368,
+        "n_pos": 1500,
+        "n_neg": 220
+      },
+      "score_distribution": {
+        "smoke": {
+          "median": 0.6112255765497685,
+          "mean": 0.608012807542877,
+          "q25": 0.5833759462197395,
+          "q75": 0.6369431428133677,
+          "frac_ge_0_5": 1.0
+        },
+        "none": {
+          "median": 0.6138971591740847,
+          "mean": 0.616170269010643,
+          "q25": 0.5865902344882488,
+          "q75": 0.6450007029995323,
+          "frac_ge_0_5": 1.0
+        },
+        "fire_only": {
+          "median": 0.6117397064715624,
+          "mean": 0.5940804946057819,
+          "q25": 0.5725489799219828,
+          "q75": 0.619105233438313,
+          "frac_ge_0_5": 1.0
+        }
+      }
+    }
+  }
+}

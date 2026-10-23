@@ -1,0 +1,16 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-21 20:01:04 | INFO    | evaluation.sweep_curve       | sweeping model s (variant=default)
+2026-10-21 20:01:04 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 20:08:34 | INFO    | evaluation.sweep_curve       | sweeping model p (variant=default)
+2026-10-21 20:08:34 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 20:15:36 | INFO    | evaluation.sweep_curve       | sweeping model a (variant=default)
+2026-10-21 20:15:36 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 20:22:59 | INFO    | evaluation.sweep_curve       | sweeping model t (variant=default)
+2026-10-21 20:22:59 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 20:30:23 | INFO    | evaluation.sweep_curve       | sweeping model i (variant=default)
+2026-10-21 20:30:23 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 20:37:47 | INFO    | evaluation.sweep_curve       | sweeping model a (variant=default)
+2026-10-21 20:37:47 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)
+2026-10-21 20:44:57 | INFO    | evaluation.sweep_curve       | sweeping model l (variant=default)
+2026-10-21 20:44:57 | INFO    | utils.checkpoints            | loaded checkpoint results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)

@@ -1,0 +1,31 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-21 16:16:02 | INFO    | evaluation.sweep_curve       | sweeping model spatial (variant=default)
+2026-10-21 16:16:02 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 16:16:42 | INFO    | evaluation.sweep_curve       | sweeping model tcn (variant=default)
+2026-10-21 16:16:42 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split01_seed42\model.pt (sha256=75522ef3716bf664)
+2026-10-21 16:16:42 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\tcn_split01_seed42\model_calibrated.pt (sha256=d63bf3f9832dd04f)
+2026-10-21 16:17:49 | INFO    | evaluation.sweep_curve       | wrote results\raw\sweep_split01_seed42.json
+2026-10-21 16:17:49 | INFO    | utils.experiment_registry    | appended experiment sweep_split01_seed42 to experiments\registry.csv
+[
+  {
+    "recall_level": 0.25,
+    "spatial": 0.0,
+    "tcn": NaN
+  },
+  {
+    "recall_level": 0.5,
+    "spatial": 84.50704225352115,
+    "tcn": 42.253521126760575
+  },
+  {
+    "recall_level": 0.75,
+    "spatial": 126.76056338028172,
+    "tcn": 84.50704225352115
+  },
+  {
+    "recall_level": 1.0,
+    "spatial": 169.0140845070423,
+    "tcn": 126.76056338028171
+  }
+]

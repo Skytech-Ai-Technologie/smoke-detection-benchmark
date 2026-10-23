@@ -1,0 +1,30 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+<frozen runpy>:128: RuntimeWarning: 'src.training.calibrate' found in sys.modules after import of package 'src.training', but prior to execution of 'src.training.calibrate'; this may result in unpredictable behaviour
+2026-10-21 16:07:13 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split03_seed42\model.pt (sha256=bbd62ee455cf21fa)
+2026-10-21 16:07:14 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\tcn_split03_seed42\model.pt (sha256=2f523b720ec28543)
+2026-10-21 16:07:19 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\tcn_split03_seed42\model.pt (sha256=2f523b720ec28543)
+2026-10-21 16:07:19 | INFO    | utils.checkpoints            | saved checkpoint D:\papier 3 2027\results\raw\tcn_split03_seed42\model_calibrated.pt (sha256=17a169c33cb371bc)
+2026-10-21 16:07:19 | INFO    | utils.experiment_registry    | appended experiment calibration_split03_seed42 to experiments\registry.csv
+2026-10-21 16:07:19 | INFO    | training.calibrate           | calibration report: {
+  "none": {
+    "ece": 0.12354373500983533,
+    "mce": 0.6748824084020475,
+    "brier": 0.09484592937993742
+  },
+  "temperature": {
+    "ece": 0.13119504300037463,
+    "mce": 0.911639005514996,
+    "brier": 0.09028553177432261
+  },
+  "platt": {
+    "ece": 0.04754282121940836,
+    "mce": 0.7361066682185153,
+    "brier": 0.042411822207486204
+  },
+  "isotonic": {
+    "ece": 1.720341639026348e-18,
+    "mce": 2.7755575615628914e-17,
+    "brier": 0.03248221326301387
+  }
+}

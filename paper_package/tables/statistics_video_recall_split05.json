@@ -1,0 +1,52 @@
+{
+  "metric": "video_recall",
+  "baseline": "results/raw/video_eval_spatial_split05_seed42.json",
+  "candidate": "results/raw/video_eval_tcn_split05_seed42.json",
+  "n_paired_videos": 7,
+  "baseline_corpus_value": 0.0,
+  "candidate_corpus_value": 0.5,
+  "mcnemar": {
+    "b": 0,
+    "c": 2,
+    "statistic": 0.0,
+    "p_value": 0.5,
+    "n_pairs": 7
+  },
+  "per_video": [
+    {
+      "video_id": "firesense_testneg01_807",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testneg07_813",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testneg09_815",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testpos03_819",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testpos07_823",
+      "baseline": 0.0,
+      "candidate": 0.0
+    },
+    {
+      "video_id": "firesense_testpos11_827",
+      "baseline": 0.0,
+      "candidate": 1.0
+    },
+    {
+      "video_id": "firesense_testpos13_829",
+      "baseline": 0.0,
+      "candidate": 1.0
+    }
+  ]
+}

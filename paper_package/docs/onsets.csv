@@ -1,0 +1,39 @@
+# Manual smoke-onset annotations for the FIRESENSE positive videos.
+#
+# PROTOCOL
+# The onset of a positive video is the first frame at which smoke is
+# *unambiguously visible* to a human annotator. The values were obtained by
+# inspecting 4x4 contact sheets of the whole video and a finer 4x4 contact
+# sheet of the first 120 frames (tools/make_contact_sheet.py); the sheets are
+# kept in data/annotations/sheets and data/annotations/sheets_fine.
+#
+# IMPORTANT DATASET PROPERTY
+# In 12 of the 13 positive videos the smoke is already visible in the first
+# frame: the clips were cut starting from the moment the smoke was produced.
+# The videos therefore contain almost no "pre-onset" frames. The consequence
+# for the benchmark is spelled out in paper/dataset_card.md and
+# paper/benchmark_protocol.md: the classical "detection delay from the
+# annotated onset" degenerates into the "time to first alarm", because the
+# onset coincides with the start of the clip.
+#
+# `official_onset_frame` records the first frame that carries the cyan
+# smoke-region contour burned into the recording (only a subset of the videos
+# were produced with the annotation overlay). It is reported as a cross-check
+# and is deliberately NOT used for the primary metric, because the contour
+# only appears once the region is large enough to be drawn and is therefore
+# systematically late.
+#
+video_name,onset_frame,source,confidence,official_onset_frame,notes
+testpos01.817.avi,15,manual_contact_sheet,medium,,"a faint smudge is present from f0; a distinct white puff is visible from f15"
+testpos02.818.avi,0,manual_contact_sheet,high,,"heavy plume and flame visible in the first frame"
+testpos03.819.avi,0,manual_contact_sheet,medium,,"small white plume at the bottom of the frame"
+testpos04.820.avi,0,manual_contact_sheet,high,,"two clear white plumes in the first frame"
+testpos05.821.avi,0,manual_contact_sheet,high,36,"plume visible from f0; the burned-in contour starts at f36"
+testpos06.822.avi,0,manual_contact_sheet,high,,"a full smoke column rises from the pot in the first frame"
+testpos07.823.avi,0,manual_contact_sheet,medium,,"small wisp above the pot in the first frame"
+testpos08.824.avi,0,manual_contact_sheet,medium,,"thin plume and a flame at the right of the shed in the first frame"
+testpos09.825.avi,0,manual_contact_sheet,high,,"a clear white plume above the smoke pot in the first frame"
+testpos10.826.avi,0,manual_contact_sheet,high,,"a large white plume fills the upper part of the first frame"
+testpos11.827.avi,0,manual_contact_sheet,high,150,"a small white puff above the barrel in the first frame; the burned-in contour starts at f150"
+testpos12.828.avi,0,manual_contact_sheet,high,56,"dense white smoke in the first frame; the burned-in contour starts at f56"
+testpos13.829.avi,0,manual_contact_sheet,high,,"a large white plume in the first frame"

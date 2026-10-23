@@ -1,0 +1,4 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-21 16:26:29 | INFO    | evaluation.sweep_curve       | sweeping model spatial (variant=default)
+2026-10-21 16:26:29 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split04_seed42\model.pt (sha256=c7ecdc885e0fd4fa)

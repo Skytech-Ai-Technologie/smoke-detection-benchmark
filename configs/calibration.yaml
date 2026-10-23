@@ -1,0 +1,25 @@
+# Stage D: calibration of the temporal model.
+#
+# The calibrator is fitted on the validation split only. The four supported
+# methods are always *compared* on the validation split, and the report
+# records the calibration error of each of them.
+
+calibration:
+  methods:
+    - none
+    - temperature
+    - platt
+    - isotonic
+  selected: temperature
+  n_bins: 10
+
+# The calibration manifest is only used to check that no test video leaks
+# into the quantisation calibration set.
+manifest: data/manifests/calibration.csv
+feature_dir: data/processed/features
+splits_file: data/manifests/splits.csv
+split: split01
+role: validation
+
+data:
+  dataset: firesense

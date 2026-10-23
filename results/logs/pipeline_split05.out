@@ -1,0 +1,24 @@
+=== train_spatial ===
+  2026-10-21 16:00:58 | INFO    | training.train_spatial       | selected 1 epochs by cross-validation
+  2026-10-21 16:01:10 | INFO    | utils.checkpoints            | saved checkpoint D:\papier 3 2027\results\raw\spatial_split05_seed42\model.pt (sha256=48a699c962e9dfd8)
+--- train_spatial finished in 845.2 s (exit 0)
+=== train_temporal ===
+  2026-10-21 16:04:17 | INFO    | utils.checkpoints            | saved checkpoint D:\papier 3 2027\results\raw\tcn_split05_seed42\model.pt (sha256=0a50e9644931a3aa)
+--- train_temporal finished in 179.0 s (exit 0)
+=== calibrate ===
+  2026-10-21 16:04:25 | INFO    | utils.checkpoints            | saved checkpoint D:\papier 3 2027\results\raw\tcn_split05_seed42\model_calibrated.pt (sha256=d9ff468cccf13696)
+--- calibrate finished in 7.8 s (exit 0)
+=== select_thresholds ===
+  2026-10-21 16:06:35 | INFO    | training.select_thresholds   | selected operating point: {
+--- select_thresholds finished in 130.0 s (exit 0)
+=== evaluate_frame ===
+  2026-10-21 16:07:53 | INFO    | evaluation.evaluate_frame    | frame metrics | precision=0.5528 recall=1.0000 f1=0.7120 auroc=0.5249 auprc=0.5821 ece=0.1857
+--- evaluate_frame finished in 77.8 s (exit 0)
+=== evaluate_video ===
+  2026-10-21 16:08:56 | INFO    | evaluation.evaluate_video    | video metrics | recall=0.500 specificity=0.667 fa/h=51.429 delay_mean=3.14s delay_p95=4.56s
+--- evaluate_video finished in 62.4 s (exit 0)
+=== evaluate_calibration ===
+--- evaluate_calibration finished in 61.2 s (exit 0)
+=== sweep_curve ===
+--- sweep_curve finished in 77.5 s (exit 0)
+pipeline finished

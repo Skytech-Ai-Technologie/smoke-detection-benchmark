@@ -1,0 +1,4 @@
+video_id,dataset,path,label,num_frames,fps,width,height,duration_sec,sha256,split,session_id,onset_frame,smoke_visibility,scene_type,source_url,video_name
+firesense_testneg01_807,firesense,data/raw/firesense_smoke/neg/testneg01.807.avi,negative,251,25.0,352,288,10.04,9878ad2640b06e1472b015762bd52eb224936c85d7488ea9b62ed5b0590aa45c,split03,testneg01,,,,https://zenodo.org/records/836749,testneg01.807.avi
+firesense_testpos04_820,firesense,data/raw/firesense_smoke/pos/testpos04.820.avi,smoke,1964,25.0,640,360,78.56,934d92ace78daf33bbf29abf385ed7f96cc8ba3469e53df9199829a4dfc445ec,split03,testpos04,,,,https://zenodo.org/records/836749,testpos04.820.avi
+firesense_testpos08_824,firesense,data/raw/firesense_smoke/pos/testpos08.824.avi,smoke,363,15.0,320,240,24.2,32f6a9450e81f106f24b2b9c7feb7a5f50fae6a42b9871282c883b2205e057f2,split03,testpos08,,,,https://zenodo.org/records/836749,testpos08.824.avi

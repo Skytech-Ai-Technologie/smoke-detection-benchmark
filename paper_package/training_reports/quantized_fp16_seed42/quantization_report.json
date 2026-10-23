@@ -1,0 +1,20 @@
+{
+  "mode": "fp16",
+  "source_checkpoint": "results/raw/tcn_split01_seed42/model_calibrated.pt",
+  "source_sha256": "d63bf3f9832dd04f4b70f139c48b410af41ee9eb1c71d0ce34b254d24250d68b",
+  "calibration_manifest": "data/manifests/split01_train.csv",
+  "n_calibration_videos": 12,
+  "comparison": {
+    "max_abs_diff": 0.0015192031860351562,
+    "mean_abs_diff": 0.0009049177169799805,
+    "mean_relative_diff": 0.00023481079551856965,
+    "logit_std": 4.857114791870117
+  },
+  "comparison_note": "native fp16 forward on cpu",
+  "sizes": {
+    "fp16_bytes": 18398,
+    "fp32_bytes": 23920
+  },
+  "checkpoint": "results\\raw\\quantized_fp16_seed42\\model_fp16.pt",
+  "checkpoint_sha256": "02b0e28cecab61a7d97414ac5551cbdb94377e67c50349ef295c5899851a66f9"
+}

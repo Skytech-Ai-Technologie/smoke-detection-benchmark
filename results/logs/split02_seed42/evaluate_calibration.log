@@ -1,0 +1,15 @@
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\cuda\__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-21 16:04:54 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\spatial_split02_seed42\model.pt (sha256=ec27dfbe348ec131)
+2026-10-21 16:04:54 | INFO    | utils.checkpoints            | loaded checkpoint D:\papier 3 2027\results\raw\tcn_split02_seed42\model_calibrated.pt (sha256=95a4b5ef05544971)
+2026-10-21 16:07:13 | INFO    | evaluation.common            | wrote results\raw\calibration_eval_split02_seed42.json
+2026-10-21 16:07:13 | INFO    | utils.experiment_registry    | appended experiment calibration_eval_split02_seed42 to experiments\registry.csv
+2026-10-21 16:07:13 | INFO    | evaluation.evaluate_calibration | calibration | ECE=0.0916 MCE=0.1755 Brier=0.0347 (n=4615 frames)
+2026-10-21 16:07:13 | INFO    | evaluation.evaluate_calibration |   positive_frames    n=0        ece=0.1030
+2026-10-21 16:07:13 | INFO    | evaluation.evaluate_calibration |   negative_frames    n=0        ece=0.2137
+2026-10-21 16:07:13 | INFO    | evaluation.evaluate_calibration |   positive_videos    n=0        ece=0.1030
+2026-10-21 16:07:13 | INFO    | evaluation.evaluate_calibration |   negative_videos    n=0        ece=0.2137
+2026-10-21 16:07:13 | INFO    | evaluation.evaluate_calibration |   bright_scenes      n=0        ece=0.1185
+2026-10-21 16:07:13 | INFO    | evaluation.evaluate_calibration |   dark_scenes        n=0        ece=0.0956
+2026-10-21 16:07:13 | INFO    | evaluation.evaluate_calibration |   high_motion_scenes n=0        ece=0.0924
+2026-10-21 16:07:13 | INFO    | evaluation.evaluate_calibration |   low_motion_scenes  n=0        ece=0.0986
